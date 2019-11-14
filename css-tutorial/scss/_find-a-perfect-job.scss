@@ -1,0 +1,247 @@
+// The default, most outer space
+body {
+  font: 100% $muli;
+  color: $primary-color;
+  padding: 42px 142px 0px 142px;
+}
+
+// Flex
+.flex-container {
+  display: flex;
+}
+
+.find-a-perfect-main {
+  margin-top: 40px;
+}
+
+// Left
+.find-a-perfect-main > .left {
+  flex: 50%;
+}
+
+// Right
+.find-a-perfect-main > .right {
+  flex: 50%;
+}
+
+// Header
+.header {
+  font-family: $overpass;
+  color: $primary-color;
+}
+
+.main-header {
+  font-size: 99px;
+  margin-top: 100px;
+}
+
+// Sub header
+.sub-header {
+  font-family: $muli;
+  opacity: 0.5;
+}
+
+.main-sub-header {
+  font-size: 48px;
+}
+
+// Top search bar
+.search-bar {
+  width: 767px;
+  height: 140px;
+  margin-top: 56px;
+  box-shadow: 0 16px 68px 0 rgba(27, 40, 155, 0.11);
+  border-radius: 70px;
+}
+
+.input-inside {
+  color: $primary-color;
+  border: none;
+  font-size: 33px;
+  position: relative;
+  float: left;
+  margin-left: 65px;
+  margin-top: 46px;
+  letter-spacing: -0.26px;
+}
+
+input::placeholder {
+  opacity: 0.2;
+}
+
+.input-inside:focus {
+  outline-width: 0;
+  outline: none;
+}
+
+.search-button {
+  position: relative;
+  float: right;
+}
+
+.trust {
+  opacity: 0.25;
+  font-size: 31px;
+  font-weight: 600;
+  line-height: 2.03;
+  padding-top: 125px;
+}
+
+.brand-list {
+  align-items: baseline;
+}
+
+.brand-logo {
+  height: 256px;
+  width: 200px;
+  object-fit: none;
+  margin-top: -100px;
+}
+
+.first-logo {
+  margin-left: -25px;
+}
+
+// Top right image
+.top-right-image {
+  position: relative;
+  margin-left: 124px;
+}
+
+.suitcase-icon {
+  position: absolute;
+  top: 40%;
+  left: -10%;
+  box-shadow: 0 3px 35px 0 rgba(3, 11, 97, 0.2);
+}
+
+.portfolio {
+  width: 47px;
+  height: 41px;
+}
+
+.phone-icon {
+  width: 77px;
+  height: 77px;
+  position: absolute;
+  top: 65%;
+  left: 7%;
+}
+
+.phone {
+  width: 47px;
+  height: 41px;
+}
+
+.man-user-icon {
+  width: 77px;
+  height: 77px;
+  position: absolute;
+  top: 45%;
+  left: 78%;
+}
+
+.man-user {
+  width: 47px;
+  height: 41px;
+}
+
+.web-developer {
+  width: 393px;
+  height: 429px;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 24px 93px 0 rgba(27, 40, 155, 0.12);
+  background-color: #ffffff;
+  position: absolute;
+  top: 72%;
+  left: 33%;
+}
+
+.web-developer-title {
+  margin-top: 17px;
+  font-family: $muli;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.web-developer-description {
+  margin-top: 33px;
+  font-size: 14px;
+  font-family: $muli;
+  font-weight: 600;
+  line-height: 1.93;
+  opacity: 0.3;
+}
+
+.web-developer-detail {
+  margin-top: 30px;
+  color: #0a95f2;
+}
+
+#more {
+  margin-left: 10px;
+}
+
+.language-tag-list {
+  margin-top: 14px;
+}
+
+.language-tag-list > .flex-container > button {
+  margin-right: 16px;
+  margin-top: 16px;
+  height: 42px;
+  border-radius: 44px;
+  font-weight: 600;
+  padding: 0px;
+}
+
+.first-tags {
+  width: 110px;
+}
+
+.second-tags {
+  width: 144px;
+}
+
+@media screen and (max-width: 600px) {
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    padding: 28px 94px 0px 94px;
+  }
+
+  //header
+  .main-header {
+    font-size: 66px;
+  }
+
+  .main-sub-header {
+    font-size: 32px;
+  }
+
+  // search bar
+  .search-bar {
+    width: 511px;
+    height: 93px;
+    border-radius: 70px;
+  }
+
+  input.input-inside {
+    font-size: 22px;
+    margin-left: 43px;
+    margin-top: 30px;
+  }
+
+  .search-button {
+    width: 78px;
+    height: 76px;
+    margin: 10px;
+  }
+
+  .magnifying-glass {
+    width: 22px;
+    height: 22px;
+  }
+}

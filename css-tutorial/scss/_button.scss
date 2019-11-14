@@ -1,0 +1,29 @@
+.custom-button {
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  font-family: $muli;
+  font-weight: 600;
+  margin: 4px 2px;
+  border-radius: 27px;
+  cursor: pointer;
+}
+
+.light-background-button {
+  color: $lightest-color;
+  background-color: rgba($light-color, .11);
+  border: none;
+}
+
+.dark-background-button {
+  color: white;
+  background: linear-gradient(178deg, #1040c6 -122%, #09aeff 96%);
+  border: none;
+}
+
+.border-button {
+  border: solid 2px #0b8fef;
+}
+

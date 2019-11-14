@@ -1,0 +1,456 @@
+@import url(https://fonts.googleapis.com/css?family=Overpass&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Muli:400,600,700&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,500&display=swap);
+.custom-button {
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  font-family: "Muli";
+  font-weight: 600;
+  margin: 4px 2px;
+  border-radius: 27px;
+  cursor: pointer;
+}
+
+.light-background-button {
+  color: #0a95f2;
+  background-color: rgba(9, 174, 255, 0.11);
+  border: none;
+}
+
+.dark-background-button {
+  color: white;
+  background: linear-gradient(178deg, #1040c6 -122%, #09aeff 96%);
+  border: none;
+}
+
+.border-button {
+  border: solid 2px #0b8fef;
+}
+
+.circle-wrapper {
+  width: 117px;
+  height: 114px;
+  border-radius: 66px;
+  margin: 15px;
+}
+
+.inner-icon {
+  width: 33.3px;
+  height: 33.3px;
+  object-fit: contain;
+  position: relative;
+  float: left;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.white-circle-wrapper {
+  background-color: white;
+}
+
+.color-circle-wrapper {
+  background-image: linear-gradient(178deg, #1040c6 -26%, #09aeff 99%);
+}
+
+.top-nav-list {
+  align-items: center;
+}
+
+.top-logo {
+  flex-grow: 7;
+}
+
+.rectangle-right-left {
+  width: 94px;
+  height: 93px;
+  background-image: linear-gradient(194deg, #1040c6, #09aeff);
+}
+
+.inside-color-background {
+  position: relative;
+  float: left;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 45px;
+  color: white;
+}
+
+.conner-circle {
+  border-radius: 30% 30% 0% 30%;
+}
+
+.topnav {
+  overflow: hidden;
+  height: 93px;
+  flex-grow: 5;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #030b61;
+  text-align: center;
+  padding: 32px 22px;
+  text-decoration: none;
+  font-size: 24px;
+  font-family: "Muli";
+  font-weight: 600;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  color: #0b8fef;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+.topnav-right {
+  float: right;
+}
+
+.topnav > .topnav-right > .custom-button {
+  width: 274px;
+  border-radius: 44px;
+}
+
+.triangle {
+  position: relative;
+  background-color: orange;
+  text-align: left;
+}
+
+.triangle:before,
+.triangle:after {
+  content: "";
+  position: absolute;
+  background-color: inherit;
+}
+
+.triangle,
+.triangle:before,
+.triangle:after {
+  width: 10em;
+  height: 10em;
+  border-top-right-radius: 75%;
+}
+
+.triangle {
+  transform: rotate(-90deg) skewX(-30deg) scale(1, 0.866);
+}
+
+.triangle:before {
+  transform: rotate(-135deg) skewX(-45deg) scale(1.414, 0.707) translate(0, -50%);
+}
+
+.triangle:after {
+  transform: rotate(135deg) skewY(-45deg) scale(0.707, 1.414) translate(50%);
+}
+
+body {
+  font: 100% "Muli";
+  color: #030b61;
+  padding: 42px 142px 0px 142px;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.find-a-perfect-main {
+  margin-top: 40px;
+}
+
+.find-a-perfect-main > .left {
+  flex: 50%;
+}
+
+.find-a-perfect-main > .right {
+  flex: 50%;
+}
+
+.header {
+  font-family: "Overpass";
+  color: #030b61;
+}
+
+.main-header {
+  font-size: 99px;
+  margin-top: 100px;
+}
+
+.sub-header {
+  font-family: "Muli";
+  opacity: 0.5;
+}
+
+.main-sub-header {
+  font-size: 48px;
+}
+
+.search-bar {
+  width: 767px;
+  height: 140px;
+  margin-top: 56px;
+  box-shadow: 0 16px 68px 0 rgba(27, 40, 155, 0.11);
+  border-radius: 70px;
+}
+
+.input-inside {
+  color: #030b61;
+  border: none;
+  font-size: 33px;
+  position: relative;
+  float: left;
+  margin-left: 65px;
+  margin-top: 46px;
+  letter-spacing: -0.26px;
+}
+
+input::placeholder {
+  opacity: 0.2;
+}
+
+.input-inside:focus {
+  outline-width: 0;
+  outline: none;
+}
+
+.search-button {
+  position: relative;
+  float: right;
+}
+
+.trust {
+  opacity: 0.25;
+  font-size: 31px;
+  font-weight: 600;
+  line-height: 2.03;
+  padding-top: 125px;
+}
+
+.brand-list {
+  align-items: baseline;
+}
+
+.brand-logo {
+  height: 256px;
+  width: 200px;
+  object-fit: none;
+  margin-top: -100px;
+}
+
+.first-logo {
+  margin-left: -25px;
+}
+
+.top-right-image {
+  position: relative;
+  margin-left: 124px;
+}
+
+.suitcase-icon {
+  position: absolute;
+  top: 40%;
+  left: -10%;
+  box-shadow: 0 3px 35px 0 rgba(3, 11, 97, 0.2);
+}
+
+.portfolio {
+  width: 47px;
+  height: 41px;
+}
+
+.phone-icon {
+  width: 77px;
+  height: 77px;
+  position: absolute;
+  top: 65%;
+  left: 7%;
+}
+
+.phone {
+  width: 47px;
+  height: 41px;
+}
+
+.man-user-icon {
+  width: 77px;
+  height: 77px;
+  position: absolute;
+  top: 45%;
+  left: 78%;
+}
+
+.man-user {
+  width: 47px;
+  height: 41px;
+}
+
+.web-developer {
+  width: 393px;
+  height: 429px;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 24px 93px 0 rgba(27, 40, 155, 0.12);
+  background-color: #ffffff;
+  position: absolute;
+  top: 72%;
+  left: 33%;
+}
+
+.web-developer-title {
+  margin-top: 17px;
+  font-family: "Muli";
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.web-developer-description {
+  margin-top: 33px;
+  font-size: 14px;
+  font-family: "Muli";
+  font-weight: 600;
+  line-height: 1.93;
+  opacity: 0.3;
+}
+
+.web-developer-detail {
+  margin-top: 30px;
+  color: #0a95f2;
+}
+
+#more {
+  margin-left: 10px;
+}
+
+.language-tag-list {
+  margin-top: 14px;
+}
+
+.language-tag-list > .flex-container > button {
+  margin-right: 16px;
+  margin-top: 16px;
+  height: 42px;
+  border-radius: 44px;
+  font-weight: 600;
+  padding: 0px;
+}
+
+.first-tags {
+  width: 110px;
+}
+
+.second-tags {
+  width: 144px;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    padding: 28px 94px 0px 94px;
+  }
+
+  .main-header {
+    font-size: 66px;
+  }
+
+  .main-sub-header {
+    font-size: 32px;
+  }
+
+  .search-bar {
+    width: 511px;
+    height: 93px;
+    border-radius: 70px;
+  }
+
+  input.input-inside {
+    font-size: 22px;
+    margin-left: 43px;
+    margin-top: 30px;
+  }
+
+  .search-button {
+    width: 78px;
+    height: 76px;
+    margin: 10px;
+  }
+
+  .magnifying-glass {
+    width: 22px;
+    height: 22px;
+  }
+}
+.secondary-header {
+  font-size: 55px;
+}
+
+.secondary-sub-header {
+  font-size: 35px;
+  line-height: 1.69;
+}
+
+.recommended-jobs {
+  margin-top: 150px;
+}
+
+.recommended-jobs > .left {
+  flex: 50%;
+}
+
+.recommended-jobs > .right {
+  flex: 50%;
+  position: relative;
+}
+
+.recommended-jobs > .right > .list-button {
+  position: absolute;
+  top: 45%;
+  right: 0;
+}
+
+.recommended-jobs > .right > .list-button > .custom-button {
+  margin-left: 25px;
+  width: 190px;
+  height: 64px;
+  font-size: 21px;
+  font-weight: 600;
+}
+
+.carousel-card {
+  width: 510px;
+  height: 563px;
+  border-radius: 30px;
+  box-shadow: 0 2px 78px 0 rgba(27, 40, 155, 0.12);
+  border: solid 1px rgba(112, 112, 112, 0.22);
+  background-color: #ffffff;
+}
+
+.carousel-card > .carousel-top-image > .triangle,
+.triangle:before,
+.triangle:after {
+  background-color: #0a95f2;
+}
+
+.carousel-top-image {
+  position: relative;
+}
+
+.carousel-top-image > img {
+  position: absolute;
+  top: 45%;
+}
+
+/*# sourceMappingURL=styles.css.map */

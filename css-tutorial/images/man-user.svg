@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="man-user" width="25.719" height="33.814" viewBox="0 0 25.719 33.814">
+    <defs>
+        <style>
+            .cls-1{fill:url(#linear-gradient)}
+        </style>
+        <linearGradient id="linear-gradient" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#1040c6"/>
+            <stop offset="1" stop-color="#09aeff"/>
+        </linearGradient>
+    </defs>
+    <path id="Path_5" d="M111.343 16.537c3.76 0 6.807-3.7 6.807-8.269S117.149 0 111.343 0s-6.808 3.7-6.808 8.269 3.048 8.268 6.808 8.268z" class="cls-1" data-name="Path 5" transform="translate(-98.483)"/>
+    <path id="Path_6" d="M41.9 300.515c0-.278 0-.078 0 0z" class="cls-1" data-name="Path 6" transform="translate(-41.895 -271.353)"/>
+    <path id="Path_7" d="M308.085 301.739c0-.076 0-.529 0 0z" class="cls-1" data-name="Path 7" transform="translate(-282.368 -272.359)"/>
+    <path id="Path_8" d="M67.609 189.4c-.126-7.955-1.165-10.222-9.115-11.657a4.766 4.766 0 0 1-3.728 1.426 4.767 4.767 0 0 1-3.728-1.426c-7.864 1.419-8.966 3.652-9.111 11.4-.012.633-.017.666-.02.592v.836s1.893 3.816 12.857 3.816 12.857-3.816 12.857-3.816v-.618a5.114 5.114 0 0 1-.012-.553z" class="cls-1" data-name="Path 8" transform="translate(-41.907 -160.568)"/>
+</svg>

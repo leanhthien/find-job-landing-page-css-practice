@@ -1,0 +1,71 @@
+.top-nav-list {
+  align-items: center;
+}
+
+// Top left logo
+.top-logo {
+  flex-grow: 7;
+}
+
+.rectangle-right-left {
+  width: 94px;
+  height: 93px;
+  background-image: $primary-blue-gradient;
+}
+
+.inside-color-background {
+  position: relative;
+  float: left;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 45px;
+  color: white;
+}
+
+.conner-circle {
+  border-radius: 30% 30% 0% 30%;
+}
+
+// Right Nav
+.topnav {
+  overflow: hidden;
+  height: 93px;
+  flex-grow: 5;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: $primary-color;
+  text-align: center;
+  padding: 32px 22px;
+  text-decoration: none;
+  font-size: 24px;
+  font-family: $muli;
+  font-weight: 600;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  color: $secondary-color;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+.topnav-right {
+  float: right;
+}
+
+.topnav > .topnav-right > .custom-button {
+  width: 274px;
+  border-radius: 44px;
+}
