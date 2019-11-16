@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+
+    <!-- Top navigation -->
+    <div class="flex-container top-nav-list">
+        <div class="top-logo">
+            <div class="rectangle-right-left conner-circle nav-item">
+                <a class="inside-color-background">F</a>
+            </div>
+        </div>
+        <div class="topnav nav-item" id="myTopnav">
+            <div class="topnav-right">
+                <a href="#categories">Categories</a>
+                <a href="#how-it-work">How it works</a>
+                <a href="#find-job">Find job</a>
+                <a href="#post-job">Post job</a>
+                <a href="#" class="active">Sign in</a>
+                <a href="#" class="active custom-button light-background-button">Get started free</a>
+                <a class="icon" id="responsive-icon" onclick="setupNavigation()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- /* End navigation -->
+
+    <!-- Find a perfect job section -->
+    <div class="flex-container find-a-perfect-main">
+
+        <div class="left">
+            <div class="header main-header">Find a perfect</br> Job for you</div>
+
+            <div class="header sub-header main-sub-header">Modern, Easy & Efficient</div>
+
+            <div class="search-bar">
+                <div class="center-div">
+                    <input class="input-inside" type="text" placeholder="Search job, skill, talent">
+                </div>
+                <div class="circle-wrapper color-circle-wrapper search-button">
+                    <img src="images/magnifying-glass.svg" alt="search" class="inner-icon" />
+                </div>
+            </div>
+
+            <div class="trust">
+                Trusted by<sup>*</sup>
+            </div>
+
+            <div class="flex-container brand-list">
+                <div><img src="images/google/google.png" srcset="images/google/google@2x.png 2x,
+                            images/google/google@3x.png 3x" class="brand-logo first-logo"></div>
+                <div><img src="images/slack/slack.png" srcset="images/slack/slack@2x.png 2x,
+                                images/slack/slack@3x.png 3x" class="brand-logo"></div>
+                <div><img src="images/flaticon/flaticon.png" srcset="images/flaticon/flaticon@2x.png 2x,
+                        images/flaticon/flaticon@3x.png 3x" class="brand-logo"></div>
+                <div><img src="images/behance/behance.png" srcset="images/behance/behance@2x.png 2x,
+                                    images/behance/behance@3x.png 3x" class="brand-logo"></div>
+            </div>
+
+        </div>
+
+        <div class="right">
+
+            <div class="top-right-image">
+                <img src="images/polygol.png" class="top-right-image-item">
+                <div class="circle-wrapper white-circle-wrapper suitcase-icon">
+                    <img src="images/portfolio.svg" alt="portfolio" class="inner-icon portfolio" />
+                </div>
+                <div class="circle-wrapper white-circle-wrapper phone-icon">
+                    <img src="images/phone.svg" alt="phone" class="inner-icon phone" />
+                </div>
+                <div class="circle-wrapper white-circle-wrapper man-user-icon">
+                    <img src="images/man-user.svg" alt="man user" class="inner-icon man-user" />
+                </div>
+
+                <div class="web-developer">
+                    <div class="header web-developer-title">Web Developer</div>
+                    <div class="web-developer-description">A web developer is a programmer who specializes
+                        in, or is specifically engaged in, the development of &
+                        World Wide Web applications using a client–server
+                        model. A web developer is a programmer.</div>
+                    <div class=" flex-container web-developer-detail">See more detail<div id="more">></div>
+                    </div>
+                    <div class="language-tag-list">
+                        <div class="flex-container">
+                            <button class="custom-button light-background-button first-tags">Html</button>
+                            <button class="custom-button light-background-button first-tags">Css</button>
+                        </div>
+                        <div class="flex-container">
+                            <button class="custom-button light-background-button second-tags">Javascript</button>
+                            <button class="custom-button light-background-button second-tags">Bootstrap</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- /* End find a perfect job section -->
+
+    <!-- Recommended jobs section -->
+    <div class="flex-container recommended-jobs">
+
+        <div class="left">
+            <div class="header secondary-header">Recommended Jobs</br> 10000+ Job available for you
+            </div>
+            <div class="header sub-header secondary-sub-header">Explain your skill, roll & talent with us by this
+                recommended jobs.</div>
+        </div>
+
+        <div class="right">
+            <div class="list-button">
+                <button class="custom-button light-background-button">Full Time</button>
+                <button class="custom-button dark-background-button">Remote</button>
+                <button class="custom-button light-background-button">Per Time</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="recommended-jobs-carousel">
+
+        <div class="flex-container carousel-container">
+
+            <div class="carousel-card first-job" id='first-job-carousel'>
+                <div class="carousel-top-image">
+                    <div class="triangle">
+                    </div>
+                    <img src="images/web-developer/web-developer.svg" alt="Web Developer" class="carousel-top-icon" />
+                </div>
+                <div class="carousel-top-right-title">Remote</div>
+                <div class="carousel-header">Web Developer</div>
+                <div class="carousel-description">A web developer is a programmer who specializes in, or is
+                    specifically engaged in, the development of World Wide
+                    Web applications using a client–server model. </div>
+                <div class="color-divider carousel-divider"></div>
+                <div class="carousel-bottom">
+                    <div class="carousel-price">$5,000</div>
+                    <div class="carousel-select-icon">
+                        <img src="images/tap.svg" alt="select" class="tap-icon" />
+                    </div>
+                    <div class="carousel-button">
+                        <button class="custom-button border-button">Apply now</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="carousel-card second-job">
+                <div class="carousel-top-image">
+                    <div class="triangle">
+                    </div>
+                    <img src="images/graphic-design/graphic-design.svg" alt="Graphic Design"
+                        class="carousel-top-icon" />
+                </div>
+                <div class="carousel-top-right-title">Full Time</div>
+                <div class="carousel-header">Graphic Design</div>
+                <div class="carousel-description">Graphic design is the process of visual communication and
+                    problem-solving through the use of typography, phy, and
+                    illustration. The field is considered a subset.</div>
+                <div class="color-divider carousel-divider"></div>
+                <div class="carousel-bottom">
+                    <div class="carousel-price">$3,000</div>
+                    <div class="carousel-select-icon">
+                        <img src="images/tap.svg" alt="select" class="tap-icon" />
+                    </div>
+                    <div class="carousel-button">
+                        <button class="custom-button border-button">Apply now</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="carousel-card third-job">
+                <div class="carousel-top-image">
+                    <div class="triangle">
+                    </div>
+                    <img src="images/digital-maeketing/digital-marketing.svg" alt="Digital Marketing"
+                        class="carousel-top-icon" />
+                </div>
+                <div class="carousel-top-right-title">Per Time</div>
+                <div class="carousel-header">Digital Marketing</div>
+                <div class="carousel-description">Digital marketing is the process of visual communication
+                    problem-solving through the use of typography, phy, and
+                    illustration. The field is considered a subset.</div>
+                <div class="color-divider carousel-divider"></div>
+                <div class="carousel-bottom">
+                    <div class="carousel-price">$2,500</div>
+                    <div class="carousel-button">
+                        <button class="custom-button border-button">Apply now</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Add one more for demonstrate -->
+
+            <div class="carousel-card forth-job" id='last-job-carousel'>
+                <div class="carousel-top-image">
+                    <div class="triangle">
+                    </div>
+                    <img src="images/web-developer/web-developer.svg" alt="web developer" class="carousel-top-icon" />
+                </div>
+                <div class="carousel-top-right-title">Full Time</div>
+                <div class="carousel-header">Backend Developer</div>
+                <div class="carousel-description">A backend developer is a type of programmer who creates the business
+                    logic of a software application or information system.</div>
+                <div class="color-divider carousel-divider"></div>
+                <div class="carousel-bottom">
+                    <div class="carousel-price">$7,000</div>
+                    <div class="carousel-select-icon">
+                        <img src="images/tap.svg" alt="select" class="" />
+                    </div>
+                    <div class="carousel-button">
+                        <button class="custom-button border-button">Apply now</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="flex-container carousel-indicator">
+            <div class="carousel-indicator-item left-inactive" id='job-inactive-left-arrow'>
+                <img src="images/left-arrow.svg" alt="previous" class="" />
+            </div>
+            <div class="carousel-indicator-item left-active" id='job-active-left-arrow'>
+                <img src="images/right-arrow.svg" alt="previous" class="" />
+            </div>
+            <div class="carousel-indicator-item right-inactive" id='job-inactive-right-arrow'>
+                <img src="images/left-arrow.svg" alt="next" class="" />
+            </div>
+            <div class="carousel-indicator-item right-active" id='job-active-right-arrow'>
+                <img src="images/right-arrow.svg" alt="next" class="" />
+            </div>
+        </div>
+    </div>
+    <!-- /* End recommended jobs section -->
+
+    <!-- Why you choose recruite section -->
+
+    <div class="why-you-choose-recruite">
+
+        <div class="header secondary-header">
+            Why you choose recruite</br>
+            Among other job?
+        </div>
+        <div class="header sub-header secondary-sub-header">
+            Explain your skill, roll & talent with us by this</br>
+            recommended jobs.
+        </div>
+        <div class="grid-container aspect-list">
+                <div class="aspect-item">1</div>
+                <div class="aspect-item">2</div>
+                <div class="aspect-item">3</div>
+                <div class="aspect-item">4</div>    
+        </div>
+
+    </div>
+
+
+    <!--/* End why you choose recruite section -->
+
+
+
+</body>
+
+</html>

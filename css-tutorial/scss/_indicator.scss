@@ -1,0 +1,22 @@
+.carousel-indicator {
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 90px;
+}
+
+.carousel-indicator-item {
+  margin-left: 54px;
+}
+
+.left-active,
+.right-inactive {
+  transform: rotate(180deg);
+}
+
+// logic for caurosel
+
+// default state
+.left-active,
+.right-inactive {
+  display: none;
+}

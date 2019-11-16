@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="45.23" height="55.15" viewBox="0 0 45.23 55.15">
+    <defs>
+        <style>
+            .cls-1{fill:url(#linear-gradient)}
+        </style>
+        <linearGradient id="linear-gradient" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#1040c6"/>
+            <stop offset="1" stop-color="#09aeff"/>
+        </linearGradient>
+    </defs>
+    <g id="vector_3_" data-name="vector (3)" transform="translate(-46.046)">
+        <g id="Group_39" data-name="Group 39" transform="translate(60.217)">
+            <g id="Group_38" data-name="Group 38">
+                <path id="Path_19" d="M194.488 32.87l-2.345-15.009 1.482-16.9a.886.886 0 0 0-.882-.961h-13.034a.886.886 0 0 0-.883.952l1.235 16.558a.883.883 0 0 0-.076.245l-2.363 15.115a.886.886 0 0 0 .083.533l7.558 15.116a.886.886 0 0 0 1.584 0l7.558-15.119a.886.886 0 0 0 .083-.53zm-2.712-31.1l-1.336 15.235h-8.64l-1.136-15.234h11.113zm-5.721 29.405a2.421 2.421 0 1 1 2.421-2.421 2.424 2.424 0 0 1-2.421 2.423zm.886 13.194V32.853a4.192 4.192 0 1 0-1.771 0v11.518l-5.754-11.507 2.2-14.087h8.876l2.2 14.087z" class="cls-1" data-name="Path 19" transform="translate(-177.612)"/>
+            </g>
+        </g>
+        <g id="Group_41" data-name="Group 41" transform="translate(50.297 48.654)">
+            <g id="Group_40" data-name="Group 40">
+                <path id="Path_20" d="M121.357 451.7h-4.724a.886.886 0 0 0-.886.886v1.476H92.011v-1.476a.886.886 0 0 0-.886-.886H86.4a.886.886 0 0 0-.886.886v4.724a.886.886 0 0 0 .886.886h4.724a.886.886 0 0 0 .886-.886v-1.476h23.737v1.476a.886.886 0 0 0 .886.886h4.724a.886.886 0 0 0 .886-.886v-4.724a.886.886 0 0 0-.886-.886zm-31.117 4.724h-2.953v-2.952h2.953zm30.232 0h-2.952v-2.952h2.952z" class="cls-1" data-name="Path 20" transform="translate(-85.516 -451.7)"/>
+            </g>
+        </g>
+        <g id="Group_43" data-name="Group 43" transform="translate(46.046 27.398)">
+            <g id="Group_42" data-name="Group 42">
+                <path id="Path_21" d="M90.39 254.355a.886.886 0 0 0-.886.886 20.843 20.843 0 1 1-41.687 0 .886.886 0 0 0-1.771 0 22.615 22.615 0 0 0 45.23 0 .886.886 0 0 0-.886-.886z" class="cls-1" data-name="Path 21" transform="translate(-46.046 -254.355)"/>
+            </g>
+        </g>
+    </g>
+</svg>

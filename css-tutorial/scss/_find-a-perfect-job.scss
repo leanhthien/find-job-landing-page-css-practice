@@ -1,13 +1,8 @@
 // The default, most outer space
 body {
   font: 100% $muli;
-  color: $primary-color;
+  color: #030b61;
   padding: 42px 142px 0px 142px;
-}
-
-// Flex
-.flex-container {
-  display: flex;
 }
 
 .find-a-perfect-main {
@@ -27,7 +22,7 @@ body {
 // Header
 .header {
   font-family: $overpass;
-  color: $primary-color;
+  color: #030b61;
 }
 
 .main-header {
@@ -55,7 +50,8 @@ body {
 }
 
 .input-inside {
-  color: $primary-color;
+  color: #030b61;
+  opacity: 0.5;
   border: none;
   font-size: 33px;
   position: relative;
