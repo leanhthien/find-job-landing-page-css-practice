@@ -1,0 +1,42 @@
+.are-you-ready {
+  margin-top: 208px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.send-bar {
+  width: 1077px;
+  height: 112px;
+  border-radius: 61px;
+  box-shadow: 0 7px 90px 0 rgba(3, 11, 97, 0.09);
+  background-color: #ffffff;
+  margin-top: 80px;
+}
+
+.send-bar > .input-inside {
+  transform: translate(20%, 100%);
+}
+
+.rounded-conner-wrapper {
+  width: 268px;
+  height: 112px;
+  border-radius: 61px;
+  background-image: linear-gradient(199deg, #1040c6 -26%, #09aeff 99%);
+  float: right;
+}
+
+.text-button {
+  font-size: 31px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.77;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+  position: relative;
+  float: left;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

@@ -1,0 +1,53 @@
+.footer {
+  padding: 0;
+  margin-top: 206px;
+  border-top-right-radius: 225px;
+  background-color: #030b61;
+}
+
+.list-categories {
+  margin-top: 116px;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto auto;
+  justify-items: stretch;
+  margin: 0 0 0 167px;
+}
+
+.header-categories {
+  font-family: $overpass;
+  font-size: 38px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+  margin: 118px 0 40px 0;
+}
+
+.sub-categories {
+  opacity: 0.42;
+  font-size: 26px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+  margin: 0 0 25px 0;
+}
+
+.wrapper-creadit {
+  position: relative;
+  background-color: #030b61;
+}
+
+.creadit {
+  opacity: 0.42;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 3.91;
+  padding: 89px 142px 75px 142px;
+  color: #ffffff;
+  
+}

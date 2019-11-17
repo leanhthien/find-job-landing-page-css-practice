@@ -8,7 +8,7 @@
 }
 
 .recommended-jobs {
-  margin-top: 150px;
+  margin: 150px 142px 32px 142px;
 }
 
 .recommended-jobs > .left {
@@ -34,12 +34,18 @@
   font-weight: 600;
 }
 
+.recommended-jobs-carousel {
+  margin: 0 142px 0 142px;
+}
+
 .carousel-container {
   justify-content: space-between;
+
 }
 
 .carousel-card {
   width: 500px;
+  height: 563px;
   border-radius: 30px;
   position: relative;
   box-shadow: 0 2px 78px 0 rgba(27, 40, 155, 0.12);
@@ -48,23 +54,23 @@
   margin: 123px 0 0 0;
 }
 
-.carousel-card > .carousel-top-image > .triangle,
-.triangle:before,
-.triangle:after {
+.carousel-top-image > .triangle,
+.carousel-top-image > .triangle:before,
+.carousel-top-image > .triangle:after {
   background-color: #0a95f2;
-  width:  100px;
+  width: 100px;
   height: 100px;
 }
 
 .carousel-top-image {
   position: relative;
-  margin: 24px 24px 24px 15px;
+  margin: 24px 24px 24px 20px;
 }
 
 .carousel-top-image > img {
   position: absolute;
   top: 48%;
-  left: 8%;
+  left: 10%;
 }
 
 .carousel-top-right-title {
@@ -136,11 +142,10 @@
   color: #09aeff;
 }
 
-
 // Logic for caurosel
 
 // default state
-.carousel-container .forth-job, .carousel-select-icon {
+.carousel-container .forth-job,
+.carousel-select-icon {
   display: none;
 }
-

@@ -1,0 +1,25 @@
+.some-special-quotes {
+  margin-top: 390px;
+}
+
+.top-quote {
+  margin: 0 142px 0 142px;
+}
+
+.top-quote > .left {
+  flex: 1;
+}
+
+.top-quote > .right {
+  flex: 1;
+  position: relative;
+}
+
+.top-quote  > .right > .carousel-indicator {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  right: 0;
+  bottom: 0;
+}
+

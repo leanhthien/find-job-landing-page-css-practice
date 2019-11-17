@@ -1,11 +1,132 @@
+.why-you-choose-recruite {
+  margin: 32px 142px 0 142px;
+}
+
 .aspect-list {
   grid-template-columns: auto auto;
+  margin-top: 147px;
 }
 
 .aspect-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
+  width: 485px;
+  height: 254px;
+  box-shadow: 0 24px 91px 0 rgba(3, 11, 97, 0.08);
+  background-color: #ffffff;
+  position: relative;
 }
+
+.first-aspect {
+  justify-self: end;
+  margin: 0 20px 28px 0;
+}
+
+.second-aspect {
+  margin: 0 0 28px 20px;
+}
+
+.third-aspect {
+  justify-self: end;
+  margin: 28px 20px 0 0;
+}
+
+.forth-aspect {
+  margin: 28px 0 0 20px;
+}
+
+.outside-icon > img {
+  position: absolute;
+  top: -35%;
+  right: -20%;
+  z-index: -10;
+}
+
+.aspect-header {
+  margin: 12px 0 0 40px;
+}
+
+.aspect-header > .triangle,
+.aspect-header > .triangle:before,
+.aspect-header > .triangle:after {
+  width: 75px;
+  height: 75px;
+}
+
+.aspect-header > .triangle {
+  transform: rotate(-60deg) skewX(-30deg) scale(1, 0.866);
+  opacity: 0.13;
+}
+
+.first-aspect > .aspect-header > .triangle,
+.first-aspect > .aspect-header > .triangle:before,
+.first-aspect > .aspect-header > .triangle:after {
+  background-color: #09aeff;
+}
+
+.second-aspect > .aspect-header > .triangle,
+.second-aspect > .aspect-header > .triangle:before,
+.second-aspect > .aspect-header > .triangle:after {
+  background-color: #d2550d;
+}
+
+.third-aspect > .aspect-header > .triangle,
+.third-aspect > .aspect-header > .triangle:before,
+.third-aspect > .aspect-header > .triangle:after {
+  background-color: #23dce1;
+}
+
+.forth-aspect > .aspect-header > .triangle,
+.forth-aspect > .aspect-header > .triangle:before,
+.forth-aspect > .aspect-header > .triangle:after {
+  background-color: #d8d846;
+}
+
+.first-aspect > .inner-triangle {
+  position: absolute;
+  top: 52px;
+  left: 45px;
+}
+
+.second-aspect > .inner-triangle {
+  position: absolute;
+  top: 45px;
+  left: 50px;
+}
+
+.third-aspect > .inner-triangle {
+  position: absolute;
+  top: 45px;
+  left: 45px;
+}
+
+.forth-aspect > .inner-triangle {
+  position: absolute;
+  top: 45px;
+  left: 50px;
+}
+
+.aspect-title {
+  font-size: 26px;
+  font-weight: bold;
+  padding: 46px 0 0 25px;
+}
+
+.aspect-description {
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.75;
+  letter-spacing: normal;
+  text-align: left;
+  opacity: 0.5;
+  margin: 46px 36px 36px 36px;
+}
+
+.aspect-button {
+  margin-top: 155px;
+  display: flex;
+  justify-content: center;
+}
+
+
+
