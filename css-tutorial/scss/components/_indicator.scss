@@ -1,11 +1,21 @@
 .carousel-indicator {
   justify-content: flex-end;
   align-items: center;
-  margin-top: 90px;
+  margin-top: 9rem;
 }
 
 .carousel-indicator-item {
-  margin-left: 54px;
+  margin-left: 5.4rem;
+}
+
+.active {
+  width: 7.4rem;
+  height: 4.4rem;
+}
+
+.inactive {
+  width: 4.5rem;
+  height: 3.2rem;
 }
 
 .left-active,

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/script.js"></script>
@@ -10,505 +10,619 @@
 
 <body>
 
-    <!-- Top navigation -->
-    <div class="flex-container top-nav-list">
-        <div class="top-logo">
-            <div class="rectangle-right-left conner-circle nav-item">
-                <a class="inside-color-background">F</a>
+    <div class="outer-wrapper">
+
+        <!-- Top navigation -->
+        <div class="flex-container top-nav-list">
+            <div class="top-logo">
+                <div class="rectangle-right-left conner-circle nav-item">
+                    <a class="inside-color-background">F</a>
+                </div>
             </div>
-        </div>
-        <div class="topnav nav-item" id="myTopnav">
-            <div class="topnav-right">
+            <div class="topnav" id="myTopnav">
+                <a class="icon" id="responsive-icon" onclick="setupNavigation()">
+                    <i class="fa fa-bars"></i>
+                </a>
                 <a href="#categories">Categories</a>
                 <a href="#how-it-work">How it works</a>
                 <a href="#find-job">Find job</a>
                 <a href="#post-job">Post job</a>
                 <a href="#" class="active">Sign in</a>
                 <a href="#" class="active custom-button light-background-button">Get started free</a>
-                <a class="icon" id="responsive-icon" onclick="setupNavigation()">
-                    <i class="fa fa-bars"></i>
-                </a>
             </div>
         </div>
-    </div>
-    <!-- /* End navigation -->
+        <!-- /* End navigation -->
 
-    <!-- Find a perfect job section -->
-    <div class="flex-container find-a-perfect-main">
+        <!-- Find a perfect job section -->
+        <div class="flex-container find-a-perfect-main">
 
-        <div class="left">
-            <div class="header main-header">Find a perfect</br> Job for you</div>
+            <div class="left">
+                <div class="header main-header">Find a perfect</br> Job for you</div>
 
-            <div class="header sub-header main-sub-header">Modern, Easy & Efficient</div>
+                <div class="header sub-header main-sub-header">Modern, Easy & Efficient</div>
 
-            <div class="search-bar">
-                <div class="center-div">
+                <div class="flex-container search-bar">
                     <input class="input-inside" type="text" placeholder="Search job, skill, talent">
-                </div>
-                <div class="circle-wrapper color-circle-wrapper search-button">
-                    <img src="images/magnifying-glass.svg" alt="search" class="inner-icon" />
-                </div>
-            </div>
-
-            <div class="trust">
-                Trusted by<sup>*</sup>
-            </div>
-
-            <div class="flex-container brand-list">
-                <div><img src="images/google/google.png" srcset="images/google/google@2x.png 2x,
-                            images/google/google@3x.png 3x" class="brand-logo first-logo"></div>
-                <div><img src="images/slack/slack.png" srcset="images/slack/slack@2x.png 2x,
-                                images/slack/slack@3x.png 3x" class="brand-logo"></div>
-                <div><img src="images/flaticon/flaticon.png" srcset="images/flaticon/flaticon@2x.png 2x,
-                        images/flaticon/flaticon@3x.png 3x" class="brand-logo"></div>
-                <div><img src="images/behance/behance.png" srcset="images/behance/behance@2x.png 2x,
-                                    images/behance/behance@3x.png 3x" class="brand-logo"></div>
-            </div>
-
-        </div>
-
-        <div class="right">
-
-            <div class="top-right-image">
-                <img src="images/polygol.png" class="top-right-image-item">
-                <div class="circle-wrapper white-circle-wrapper suitcase-icon">
-                    <img src="images/portfolio.svg" alt="portfolio" class="inner-icon portfolio" />
-                </div>
-                <div class="circle-wrapper white-circle-wrapper phone-icon">
-                    <img src="images/phone.svg" alt="phone" class="inner-icon phone" />
-                </div>
-                <div class="circle-wrapper white-circle-wrapper man-user-icon">
-                    <img src="images/man-user.svg" alt="man user" class="inner-icon man-user" />
-                </div>
-
-                <div class="web-developer">
-                    <div class="header web-developer-title">Web Developer</div>
-                    <div class="web-developer-description">A web developer is a programmer who specializes
-                        in, or is specifically engaged in, the development of &
-                        World Wide Web applications using a client–server
-                        model. A web developer is a programmer.</div>
-                    <div class=" flex-container web-developer-detail">See more detail<div id="more">></div>
+                    <div class="circle-wrapper color-circle-wrapper search-button">
+                        <img src="images/magnifying-glass.svg" alt="search" class="inner-icon" />
                     </div>
-                    <div class="language-tag-list">
-                        <div class="flex-container">
-                            <button class="custom-button light-background-button first-tags">Html</button>
-                            <button class="custom-button light-background-button first-tags">Css</button>
+                </div>
+
+                <div class="brand-wrapper">
+                    <div class="trust">
+                        Trusted by<sup>*</sup>
+                    </div>
+
+                    <div class="flex-container brand-list">
+                        <div class="brand-logo-item" id="first-brand-logo"><img src="images/google/google.png" srcset="images/google/google@2x.png 2x,
+                                        images/google/google@3x.png 3x" class="brand-logo"></div>
+                        <div class="brand-logo-item" id="second-brand-logo"><img src="images/slack/slack.png" srcset="images/slack/slack@2x.png 2x,
+                                            images/slack/slack@3x.png 3x" class="brand-logo"></div>
+                        <div class="brand-logo-item" id="third-brand-logo"><img src="images/flaticon/flaticon.png"
+                                srcset="images/flaticon/flaticon@2x.png 2x,
+                                    images/flaticon/flaticon@3x.png 3x" class="brand-logo"></div>
+                        <div class="brand-logo-item" id="forth-brand-logo"><img src="images/behance/behance.png" srcset="images/behance/behance@2x.png 2x,
+                                                images/behance/behance@3x.png 3x" class="brand-logo"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="right">
+
+                <div class="top-right-image">
+                    <img src="images/polygol.png" class="top-right-image-item">
+                    <div class="circle-wrapper white-circle-wrapper suitcase-icon">
+                        <img src="images/portfolio.svg" alt="portfolio" class="inner-icon portfolio" />
+                    </div>
+                    <div class="circle-wrapper white-circle-wrapper phone-icon">
+                        <img src="images/phone.svg" alt="phone" class="inner-icon phone" />
+                    </div>
+                    <div class="circle-wrapper white-circle-wrapper man-user-icon">
+                        <img src="images/man-user.svg" alt="man user" class="inner-icon man-user" />
+                    </div>
+
+                    <div class="web-developer">
+                        <div class="header web-developer-title">Web Developer</div>
+                        <div class="web-developer-description">A web developer is a programmer who specializes
+                            in, or is specifically engaged in, the development of &
+                            World Wide Web applications using a client–server
+                            model. A web developer is a programmer.</div>
+                        <div class=" flex-container web-developer-detail">See more detail<div id="more">></div>
                         </div>
-                        <div class="flex-container">
-                            <button class="custom-button light-background-button second-tags">Javascript</button>
-                            <button class="custom-button light-background-button second-tags">Bootstrap</button>
+                        <div class="language-tag-list">
+                            <div class="flex-container">
+                                <button class="custom-button light-background-button first-tags">Html</button>
+                                <button class="custom-button light-background-button first-tags">Css</button>
+                            </div>
+                            <div class="flex-container">
+                                <button class="custom-button light-background-button second-tags">Javascript</button>
+                                <button class="custom-button light-background-button second-tags">Bootstrap</button>
+                            </div>
                         </div>
                     </div>
                 </div>
+
             </div>
 
         </div>
 
-    </div>
-    <!-- /* End find a perfect job section -->
+        <!-- /* End find a perfect job section -->
 
-    <!-- Recommended jobs section -->
-    <div class="flex-container recommended-jobs">
+        <!-- Recommended jobs section -->
 
-        <div class="left">
-            <div class="header secondary-header">Recommended Jobs</br> 10000+ Job available for you
-            </div>
-            <div class="header sub-header secondary-sub-header">Explain your skill, roll & talent with us by this
-                recommended jobs.</div>
-        </div>
+        <div class="recommended-jobs">
+            <div class="flex-container recommended-jobs-top">
 
-        <div class="right">
-            <div class="list-button">
-                <button class="custom-button light-background-button">Full Time</button>
-                <button class="custom-button dark-background-button">Remote</button>
-                <button class="custom-button light-background-button">Per Time</button>
-            </div>
-        </div>
-
-    </div>
-
-    <div class="recommended-jobs-carousel">
-
-        <div class="flex-container carousel-container">
-
-            <div class="carousel-card first-job" id='first-job-carousel'>
-                <div class="carousel-top-image">
-                    <div class="triangle">
+                <div class="left">
+                    <div class="header secondary-header">Recommended Jobs 10000+ Job available for you
                     </div>
-                    <img src="images/web-developer/web-developer.svg" alt="Web Developer" class="carousel-top-icon" />
+                    <div class="header sub-header secondary-sub-header">Explain your skill, roll & talent with us by
+                        this
+                        recommended jobs.</div>
                 </div>
-                <div class="carousel-top-right-title">Remote</div>
-                <div class="carousel-header">Web Developer</div>
-                <div class="carousel-description">A web developer is a programmer who specializes in, or is
-                    specifically engaged in, the development of World Wide
-                    Web applications using a client–server model. </div>
-                <div class="color-divider carousel-divider"></div>
-                <div class="carousel-bottom">
-                    <div class="carousel-price">$5,000</div>
-                    <div class="carousel-select-icon">
-                        <img src="images/tap.svg" alt="select" class="tap-icon" />
-                    </div>
-                    <div class="carousel-button">
-                        <button class="custom-button border-button">Apply now</button>
-                    </div>
+
+                <div class="flex-container right">
+                    <button class="custom-button light-background-button">Full Time</button>
+                    <button class="custom-button dark-background-button">Remote</button>
+                    <button class="custom-button light-background-button">Per Time</button>
                 </div>
 
             </div>
 
-            <div class="carousel-card second-job">
-                <div class="carousel-top-image">
-                    <div class="triangle">
+            <div class="recommended-jobs-carousel">
+
+                <div class="flex-container carousel-container">
+
+                    <div class="carousel-card first-job" id='first-job-carousel'>
+                        <div class="carousel-top-image">
+                            <div class="triangle">
+                            </div>
+                            <img src="images/web-developer/web-developer.svg" alt="Web Developer"
+                                class="carousel-top-icon" />
+                        </div>
+                        <div class="carousel-top-right-title">Remote</div>
+                        <div class="carousel-header">Web Developer</div>
+                        <div class="carousel-description">A web developer is a programmer who specializes in, or is
+                            specifically engaged in, the development of World Wide
+                            Web applications using a client–server model. </div>
+                        <div class="color-divider carousel-divider"></div>
+                        <div class="flex-container carousel-bottom">
+                            <div class="carousel-price">$5,000</div>
+                            <div class="flex-container select-group">
+                                <div class="carousel-select-icon">
+                                    <img src="images/tap.svg" alt="select" class="tap-icon" />
+                                </div>
+                                <div class="carousel-button">
+                                    <button class="custom-button border-button">Apply now</button>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-                    <img src="images/graphic-design/graphic-design.svg" alt="Graphic Design"
-                        class="carousel-top-icon" />
-                </div>
-                <div class="carousel-top-right-title">Full Time</div>
-                <div class="carousel-header">Graphic Design</div>
-                <div class="carousel-description">Graphic design is the process of visual communication and
-                    problem-solving through the use of typography, phy, and
-                    illustration. The field is considered a subset.</div>
-                <div class="color-divider carousel-divider"></div>
-                <div class="carousel-bottom">
-                    <div class="carousel-price">$3,000</div>
-                    <div class="carousel-select-icon">
-                        <img src="images/tap.svg" alt="select" class="tap-icon" />
+
+                    <div class="carousel-card second-job">
+                        <div class="carousel-top-image">
+                            <div class="triangle">
+                            </div>
+                            <img src="images/graphic-design/graphic-design.svg" alt="Graphic Design"
+                                class="carousel-top-icon" />
+                        </div>
+                        <div class="carousel-top-right-title">Full Time</div>
+                        <div class="carousel-header">Graphic Design</div>
+                        <div class="carousel-description">Graphic design is the process of visual communication and
+                            problem-solving through the use of typography, phy, and
+                            illustration. The field is considered a subset.</div>
+                        <div class="color-divider carousel-divider"></div>
+                        <div class="flex-container carousel-bottom">
+                            <div class="carousel-price">$3,000</div>
+                            <div class="flex-container select-group">
+                                <div class="carousel-select-icon">
+                                    <img src="images/tap.svg" alt="select" class="tap-icon" />
+                                </div>
+                                <div class="carousel-button">
+                                    <button class="custom-button border-button">Apply now</button>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-                    <div class="carousel-button">
-                        <button class="custom-button border-button">Apply now</button>
+
+                    <div class="carousel-card third-job">
+                        <div class="carousel-top-image">
+                            <div class="triangle">
+                            </div>
+                            <img src="images/digital-maeketing/digital-marketing.svg" alt="Digital Marketing"
+                                class="carousel-top-icon" />
+                        </div>
+                        <div class="carousel-top-right-title">Per Time</div>
+                        <div class="carousel-header">Digital Marketing</div>
+                        <div class="carousel-description">Digital marketing is the process of visual communication
+                            problem-solving through the use of typography, phy, and
+                            illustration. The field is considered a subset.</div>
+                        <div class="color-divider carousel-divider"></div>
+                        <div class="flex-container carousel-bottom">
+                            <div class="carousel-price">$2,500</div>
+                            <div class="flex-container select-group">
+                                <div class="carousel-select-icon">
+                                    <img src="images/tap.svg" alt="select" class="tap-icon" />
+                                </div>
+                                <div class="carousel-button">
+                                    <button class="custom-button border-button">Apply now</button>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-                </div>
 
-            </div>
+                    <!-- Add one more for demonstrate -->
 
-            <div class="carousel-card third-job">
-                <div class="carousel-top-image">
-                    <div class="triangle">
-                    </div>
-                    <img src="images/digital-maeketing/digital-marketing.svg" alt="Digital Marketing"
-                        class="carousel-top-icon" />
-                </div>
-                <div class="carousel-top-right-title">Per Time</div>
-                <div class="carousel-header">Digital Marketing</div>
-                <div class="carousel-description">Digital marketing is the process of visual communication
-                    problem-solving through the use of typography, phy, and
-                    illustration. The field is considered a subset.</div>
-                <div class="color-divider carousel-divider"></div>
-                <div class="carousel-bottom">
-                    <div class="carousel-price">$2,500</div>
-                    <div class="carousel-button">
-                        <button class="custom-button border-button">Apply now</button>
-                    </div>
-                </div>
+                    <div class="carousel-card forth-job" id='last-job-carousel'>
+                        <div class="carousel-top-image">
+                            <div class="triangle">
+                            </div>
+                            <img src="images/web-developer/web-developer.svg" alt="web developer"
+                                class="carousel-top-icon" />
+                        </div>
+                        <div class="carousel-top-right-title">Full Time</div>
+                        <div class="carousel-header">Backend Developer</div>
+                        <div class="carousel-description">A backend developer is a type of programmer who creates the
+                            business
+                            logic of a software application or information system.</div>
+                        <div class="color-divider carousel-divider"></div>
+                        <div class="flex-container carousel-bottom">
+                            <div class="carousel-price">$7,000</div>
+                            <div class="flex-container select-group">
+                                <div class="carousel-select-icon">
+                                    <img src="images/tap.svg" alt="select" class="tap-icon" />
+                                </div>
+                                <div class="carousel-button">
+                                    <button class="custom-button border-button">Apply now</button>
+                                </div>
+                            </div>
+                        </div>
 
-            </div>
-
-            <!-- Add one more for demonstrate -->
-
-            <div class="carousel-card forth-job" id='last-job-carousel'>
-                <div class="carousel-top-image">
-                    <div class="triangle">
-                    </div>
-                    <img src="images/web-developer/web-developer.svg" alt="web developer" class="carousel-top-icon" />
-                </div>
-                <div class="carousel-top-right-title">Full Time</div>
-                <div class="carousel-header">Backend Developer</div>
-                <div class="carousel-description">A backend developer is a type of programmer who creates the business
-                    logic of a software application or information system.</div>
-                <div class="color-divider carousel-divider"></div>
-                <div class="carousel-bottom">
-                    <div class="carousel-price">$7,000</div>
-                    <div class="carousel-select-icon">
-                        <img src="images/tap.svg" alt="select" class="" />
-                    </div>
-                    <div class="carousel-button">
-                        <button class="custom-button border-button">Apply now</button>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="flex-container carousel-indicator">
-            <div class="carousel-indicator-item left-inactive" id='job-inactive-left-arrow'>
-                <img src="images/left-arrow.svg" alt="previous" class="" />
-            </div>
-            <div class="carousel-indicator-item left-active" id='job-active-left-arrow'>
-                <img src="images/right-arrow.svg" alt="previous" class="" />
-            </div>
-            <div class="carousel-indicator-item right-inactive" id='job-inactive-right-arrow'>
-                <img src="images/left-arrow.svg" alt="next" class="" />
-            </div>
-            <div class="carousel-indicator-item right-active" id='job-active-right-arrow'>
-                <img src="images/right-arrow.svg" alt="next" class="" />
-            </div>
-        </div>
-    </div>
-    <!-- /* End recommended jobs section -->
-
-    <!-- Why you choose recruite section -->
-
-    <div class="why-you-choose-recruite">
-
-        <div class="header secondary-header">
-            Why you choose recruite</br>
-            Among other job?
-        </div>
-
-        <div class="header sub-header secondary-sub-header">
-            Explain your skill, roll & talent with us by this</br>
-            recommended jobs.
-        </div>
-
-        <div class="grid-container aspect-list">
-            <div class="aspect-item first-aspect">
-                <div class="outside-icon">
-                    <img src="images/border-polygon.svg" alt="next" class="" />
-                </div>
-
-                <div class="flex-container aspect-header">
-                    <div class="triangle">
-                    </div>
-                    <div class="aspect-title">
-                        Best Talented People
                     </div>
                 </div>
-                <div class="inner-triangle">
-                    <img src="images/people.svg" alt="next" class="triangle-icon" />
-                </div>
 
-                <div class="aspect-description">
-                    Explain your skill, roll & talent with us by this
-                    recommended jobs.
-                </div>
-            </div>
-            <div class="aspect-item second-aspect">
-                <div class="outside-icon">
-                    <img src="images/border-polygon.svg" alt="next" class="" />
-                </div>
-
-                <div class="flex-container aspect-header">
-                    <div class="triangle">
+                <div class="flex-container carousel-indicator">
+                    <div class="carousel-indicator-item left-inactive" id='job-inactive-left-arrow'>
+                        <img src="images/left-arrow.svg" alt="previous" class="inactive" />
                     </div>
-                    <div class="aspect-title">
-                        Easy to Find Candidates
+                    <div class="carousel-indicator-item left-active" id='job-active-left-arrow'>
+                        <img src="images/right-arrow.svg" alt="previous" class="active" />
                     </div>
-                </div>
-                <div class="inner-triangle">
-                    <img src="images/candidate.svg" alt="next" class="triangle-icon" />
-                </div>
-
-                <div class="aspect-description">
-                    Explain your skill, roll & talent with us by this
-                    recommended jobs.
-                </div>
-            </div>
-            <div class="aspect-item third-aspect">
-                <div class="outside-icon">
-                    <img src="images/border-polygon.svg" alt="next" class="" />
-                </div>
-
-                <div class="flex-container aspect-header">
-                    <div class="triangle">
+                    <div class="carousel-indicator-item right-inactive" id='job-inactive-right-arrow'>
+                        <img src="images/left-arrow.svg" alt="next" class="inactive" />
                     </div>
-                    <div class="aspect-title">
-                        Easy to Communicate
+                    <div class="carousel-indicator-item right-active" id='job-active-right-arrow'>
+                        <img src="images/right-arrow.svg" alt="next" class="active" />
                     </div>
-                </div>
-                <div class="inner-triangle">
-                    <img src="images/communicate.svg" alt="next" class="triangle-icon" />
-                </div>
-
-                <div class="aspect-description">
-                    Explain your skill, roll & talent with us by this
-                    recommended jobs.
-                </div>
-            </div>
-            <div class="aspect-item forth-aspect">
-                <div class="outside-icon">
-                    <img src="images/border-polygon.svg" alt="next" class="" />
-                </div>
-
-                <div class="flex-container aspect-header">
-                    <div class="triangle">
-                    </div>
-                    <div class="aspect-title">
-                        Global Recruite option
-                    </div>
-                </div>
-                <div class="inner-triangle">
-                    <img src="images/option.svg" alt="next" class="triangle-icon" />
-                </div>
-
-                <div class="aspect-description">
-                    Explain your skill, roll & talent with us by this
-                    recommended jobs.
                 </div>
             </div>
         </div>
 
-        <div class="aspect-button">
-            <button class="custom-button border-button big-border-button">Get the Job</button>
-        </div>
+        <!-- /* End recommended jobs section -->
 
-    </div>
+        <!-- Why you choose recruite section -->
 
-    <!--/* End why you choose recruite section -->
+        <div class="why-you-choose-recruite">
 
-    <!-- Work with talented people section -->
-
-    <div class="flex-container work-with-talented-people">
-
-        <div class="left">
             <div class="header secondary-header">
-                By this job you can work
-                with 10,000+ talented people
+                Why you choose recruite</br>
+                Among other job?
             </div>
 
             <div class="header sub-header secondary-sub-header">
-                Explain your skill, roll & talent with us by this
+                Explain your skill, roll & talent with us by this</br>
                 recommended jobs.
             </div>
 
-            <div class="work-talented-button">
-                <button class="custom-button big-border-button">Get the Job</button>
+            <div class="grid-container aspect-list">
+                <div class="aspect-item first-aspect">
+                    <div class="outside-icon">
+                        <img src="images/border-polygon.svg" alt="next" class="" />
+                    </div>
+
+                    <div class="flex-container aspect-header">
+                        <div class="grid-triangle-wrapper">
+                            <div class="triangle"></div>
+                            <img src="images/people.svg" alt="next" class="triangle-icon" />
+                        </div>
+                        <div class="aspect-title">
+                            Best Talented People
+                        </div>
+                    </div>
+
+                    <div class="aspect-description">
+                        Explain your skill, roll & talent with us by this
+                        recommended jobs.
+                    </div>
+                </div>
+                <div class="aspect-item second-aspect">
+                    <div class="outside-icon">
+                        <img src="images/border-polygon.svg" alt="next" class="" />
+                    </div>
+
+                    <div class="flex-container aspect-header">
+                        <div class="grid-triangle-wrapper">
+                            <div class="triangle"></div>
+                            <img src="images/candidate.svg" alt="next" class="triangle-icon" />
+                        </div>
+                        <div class="aspect-title">
+                            Easy to Find Candidates
+                        </div>
+                    </div>
+
+                    <div class="aspect-description">
+                        Explain your skill, roll & talent with us by this
+                        recommended jobs.
+                    </div>
+                </div>
+                <div class="aspect-item third-aspect">
+                    <div class="outside-icon">
+                        <img src="images/border-polygon.svg" alt="next" class="" />
+                    </div>
+
+                    <div class="flex-container aspect-header">
+                        <div class="grid-triangle-wrapper">
+                            <div class="triangle"></div>
+                            <img src="images/communicate.svg" alt="next" class="triangle-icon" />
+                        </div>
+                        <div class="aspect-title">
+                            Easy to Communicate
+                        </div>
+                    </div>
+
+                    <div class="aspect-description">
+                        Explain your skill, roll & talent with us by this
+                        recommended jobs.
+                    </div>
+                </div>
+                <div class="aspect-item forth-aspect">
+                    <div class="outside-icon">
+                        <img src="images/border-polygon.svg" alt="next" class="" />
+                    </div>
+
+                    <div class="flex-container aspect-header">
+                        <div class="grid-triangle-wrapper">
+                            <div class="triangle"></div>
+                            <img src="images/option.svg" alt="next" class="triangle-icon" />
+                        </div>
+                        <div class="aspect-title">
+                            Global Recruite option
+                        </div>
+                    </div>
+
+                    <div class="aspect-description">
+                        Explain your skill, roll & talent with us by this
+                        recommended jobs.
+                    </div>
+                </div>
+            </div>
+
+            <div class="aspect-button">
+                <button class="custom-button border-button big-border-button">Get the Job</button>
             </div>
 
         </div>
 
-        <div class="right">
+        <!--/* End why you choose recruite section -->
 
-            <div class="blur-profile-list">
+        <!-- Work with talented people section -->
 
-                <div class="flex-container color-header">
-                    <div class="header-title">10,000+ talented people</div>
-                </div>
-                <div class="grid-container profile-image-list">
-                    <div class="profile-image-item profile-01">
-                        <img src="images/profile-image-1/Image-1.jpg" srcset="images/profile-image-1/image-1@2x.jpg 2x,
-                            images/profile-image-1/image-1@3x.jpg 3x" class="Image-1">
-                    </div>
-                    <div class="profile-image-item profile-02">
-                        <img src="images/profile-image-2/Image-2.jpg" srcset="images/profile-image-2/image-2@2x.jpg 2x,
-                            images/profile-image-2/image-2@3x.jpg 3x" class="Image-2">
-                    </div>
-                    <div class="profile-image-item profile-03">
-                        <img src="images/profile-image-3/Image-3.jpg" srcset="images/profile-image-3/image-3@2x.jpg 2x,
-                            images/profile-image-3/image-3@3x.jpg 3x" class="Image-3">
-                    </div>
-                    <div class="profile-image-item profile-04">
-                        <img src="images/profile-image-4/Image-4.jpg" srcset="images/profile-image-4/image-4@2x.jpg 2x,
-                            images/profile-image-4/image-4@3x.jpg 3x" class="Image-4">
-                    </div>
-                    <div class="profile-image-item profile-05">
-                        <img src="images/profile-image-5/Image-5.jpg" srcset="images/profile-image-5/image-5@2x.jpg 2x,
-                            images/profile-image-5/image-5@3x.jpg 3x" class="Image-5">
-                    </div>
-                    <div class="profile-image-item profile-06">
-                        <img src="images/profile-image-6/Image-6.jpg" srcset="images/profile-image-6/image-6@2x.jpg 2x,
-                            images/profile-image-6/image-6@3x.jpg 3x" class="Image-6">
-                    </div>
-                    <div class="profile-image-item profile-07">
-                        <img src="images/profile-image-7/Image-7.jpg" srcset="images/profile-image-7/image-7@2x.jpg 2x,
-                            images/profile-image-7/image-7@3x.jpg 3x" class="Image-7">
-                    </div>
-                    <div class="profile-image-item profile-08">
-                        <img src="images/profile-image-8/Image-8.jpg" srcset="images/profile-image-8/image-8@2x.jpg 2x,
-                            images/profile-image-8/image-8@3x.jpg 3x" class="Image-8">
-                    </div>
-                    <div class="profile-image-item profile-09">
-                        <img src="images/profile-image-9/Image-9.jpg" srcset="images/profile-image-9/image-9@2x.jpg 2x,
-                            images/profile-image-9/image-9@3x.jpg 3x" class="Image-9">
-                    </div>
-                    <div class="profile-image-item profile-10">
-                        <img src="images/profile-image-10/Image-10.jpg" srcset="images/profile-image-10/image-10@2x.jpg 2x,
-                            images/profile-image-10/image-10@3x.jpg 3x" class="Image-10">
-                    </div>
-                </div>
-            </div>
-            <div class="single-profile">
-                <div class="medal">
-                    <img src="images/medal.svg" alt="next" class="" />
-                </div>
-                <div class="flex-container single-profile-detail">
-                    <div class="profile-image">
-                        <img src="images/profile-image-9/Image-9.jpg" srcset="images/profile-image-9/image-9@2x.jpg 2x,
-                            images/profile-image-9/image-9@3x.jpg 3x" class="Image-9">
-                    </div>
-                    <div class="profile-name">
-                        Arafat Ovi
-                    </div>
-                    <div class="profile-job-title">
-                        Web Developer
-                    </div>
-                    <div class="profile-description">
-                        A web developer is a programmer who specializes
-                        in, or is specifically engaged in, the development
-                        World Wide Web applications.
-                    </div>
-                </div>
+        <div class="flex-container work-with-talented-people">
 
-            </div>
-
-        </div>
-
-    </div>
-
-    <!-- /* End work with talented people section -->
-
-    <!-- Some special quotes section -->
-
-    <div class="some-special-quotes">
-        <div class="flex-container top-quote">
             <div class="left">
                 <div class="header secondary-header">
-                    Some special quotes
-                    from awesome peoples
+                    By this job you can work
+                    with 10,000+ talented people
                 </div>
 
                 <div class="header sub-header secondary-sub-header">
                     Explain your skill, roll & talent with us by this
                     recommended jobs.
                 </div>
+
+                <div class="work-talented-button">
+                    <button class="custom-button big-border-button">Get the Job</button>
+                </div>
+
             </div>
+
             <div class="right">
-                <div class="flex-container carousel-indicator">
-                    <div class="carousel-indicator-item left-inactive" id='quote-inactive-left-arrow'>
-                        <img src="images/left-arrow.svg" alt="previous" class="" />
+
+                <div class="blur-profile-list">
+
+                    <div class="color-header">
+                        <div class="header-title">10,000+ talented people</div>
                     </div>
-                    <div class="carousel-indicator-item left-active" id='quote-active-left-arrow'>
-                        <img src="images/right-arrow.svg" alt="previous" class="" />
-                    </div>
-                    <div class="carousel-indicator-item right-inactive" id='quote-inactive-right-arrow'>
-                        <img src="images/left-arrow.svg" alt="next" class="" />
-                    </div>
-                    <div class="carousel-indicator-item right-active" id='quote-active-right-arrow'>
-                        <img src="images/right-arrow.svg" alt="next" class="" />
+                    <div class="grid-container profile-image-list">
+                        <div class="profile-image-item profile-01">
+                            <img src="images/profile-image-1/Image-1.jpg" srcset="images/profile-image-1/image-1@2x.jpg 2x,
+                            images/profile-image-1/image-1@3x.jpg 3x" class="Image-1">
+                        </div>
+                        <div class="profile-image-item profile-02">
+                            <img src="images/profile-image-2/Image-2.jpg" srcset="images/profile-image-2/image-2@2x.jpg 2x,
+                            images/profile-image-2/image-2@3x.jpg 3x" class="Image-2">
+                        </div>
+                        <div class="profile-image-item profile-03">
+                            <img src="images/profile-image-3/Image-3.jpg" srcset="images/profile-image-3/image-3@2x.jpg 2x,
+                            images/profile-image-3/image-3@3x.jpg 3x" class="Image-3">
+                        </div>
+                        <div class="profile-image-item profile-04">
+                            <img src="images/profile-image-4/Image-4.jpg" srcset="images/profile-image-4/image-4@2x.jpg 2x,
+                            images/profile-image-4/image-4@3x.jpg 3x" class="Image-4">
+                        </div>
+                        <div class="profile-image-item profile-05">
+                            <img src="images/profile-image-5/Image-5.jpg" srcset="images/profile-image-5/image-5@2x.jpg 2x,
+                            images/profile-image-5/image-5@3x.jpg 3x" class="Image-5">
+                        </div>
+                        <div class="profile-image-item profile-06">
+                            <img src="images/profile-image-6/Image-6.jpg" srcset="images/profile-image-6/image-6@2x.jpg 2x,
+                            images/profile-image-6/image-6@3x.jpg 3x" class="Image-6">
+                        </div>
+                        <div class="profile-image-item profile-07">
+                            <img src="images/profile-image-7/Image-7.jpg" srcset="images/profile-image-7/image-7@2x.jpg 2x,
+                            images/profile-image-7/image-7@3x.jpg 3x" class="Image-7">
+                        </div>
+                        <div class="profile-image-item profile-08">
+                            <img src="images/profile-image-8/Image-8.jpg" srcset="images/profile-image-8/image-8@2x.jpg 2x,
+                            images/profile-image-8/image-8@3x.jpg 3x" class="Image-8">
+                        </div>
+                        <div class="profile-image-item profile-09">
+                            <img src="images/profile-image-9/Image-9.jpg" srcset="images/profile-image-9/image-9@2x.jpg 2x,
+                            images/profile-image-9/image-9@3x.jpg 3x" class="Image-9">
+                        </div>
+                        <div class="profile-image-item profile-10">
+                            <img src="images/profile-image-10/Image-10.jpg" srcset="images/profile-image-10/image-10@2x.jpg 2x,
+                            images/profile-image-10/image-10@3x.jpg 3x" class="Image-10">
+                        </div>
                     </div>
                 </div>
+                <div class="single-profile">
+                    <div class="medal">
+                        <img src="images/medal.svg" alt="next" class="" />
+                    </div>
+                    <div class="flex-container single-profile-detail">
+                        <div class="profile-image">
+                            <img src="images/profile-image-9/Image-9.jpg" srcset="images/profile-image-9/image-9@2x.jpg 2x,
+                            images/profile-image-9/image-9@3x.jpg 3x" class="Image-9">
+                        </div>
+                        <div class="profile-name">
+                            Arafat Ovi
+                        </div>
+                        <div class="profile-job-title">
+                            Web Developer
+                        </div>
+                        <div class="profile-description">
+                            A web developer is a programmer who specializes
+                            in, or is specifically engaged in, the development
+                            World Wide Web applications.
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
+
         </div>
 
-        <div class="quotes-carousel">
+        <!-- /* End work with talented people section -->
 
-            <div class="quote-carousel-item quote-item-first">
-                <div class="top-quote-mark">
+        <!-- Some special quotes section -->
 
+        <div class="some-special-quotes">
+            <div class="flex-container top-quote">
+                <div class="left">
+                    <div class="header secondary-header">
+                        Some special quotes
+                        from awesome peoples
+                    </div>
+
+                    <div class="header sub-header secondary-sub-header">
+                        Explain your skill, roll & talent with us by this
+                        recommended jobs.
+                    </div>
                 </div>
-                <div class="quote-content"></div>
-                <div class="quote-owner">
-                    <div class="left">
-                        <div class="quote-owner-image">
-                            /div>
+                <div class="right">
+                    <div class="flex-container carousel-indicator">
+                        <div class="carousel-indicator-item left-inactive" id='quote-inactive-left-arrow'>
+                            <img src="images/left-arrow.svg" alt="previous" class="" />
+                        </div>
+                        <div class="carousel-indicator-item left-active" id='quote-active-left-arrow'>
+                            <img src="images/right-arrow.svg" alt="previous" class="" />
+                        </div>
+                        <div class="carousel-indicator-item right-inactive" id='quote-inactive-right-arrow'>
+                            <img src="images/left-arrow.svg" alt="next" class="" />
+                        </div>
+                        <div class="carousel-indicator-item right-active" id='quote-active-right-arrow'>
+                            <img src="images/right-arrow.svg" alt="next" class="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex-container quotes-carousel">
+
+                <div class="quote-carousel-item quote-item-first">
+                    <div class="top-quote-mark">
+                        <img src="images/quotemarks-left.svg" alt="next" class="" />
+                    </div>
+                    <div class="quote-content">
+                        To say that your professionalism, guidance and to your
+                        client is outstanding is a sheer understatement! You not &
+                        only helped me find what I was looking for in a career.
+                    </div>
+                    <div class="flex-container quote-owner">
+                        <div class="left">
+                            <div class="quote-owner-image">
+                                <img src="images/profile-image-1/Image-1.jpg" srcset="images/profile-image-1/image-1@2x.jpg 2x,
+                                    images/profile-image-1/image-1@3x.jpg 3x" class="rounded-image Image-1">
+                            </div>
                         </div>
                         <div class="right">
-                            <div class="quote-owner-name"></div>
-                            <div class="quote-owner-job-titile"></div>
+                            <div class="quote-owner-name">
+                                Arafat Ovi
+                            </div>
+                            <div class="quote-owner-job-title">
+                                Product Designer
+                            </div>
                         </div>
                     </div>
                     <div class="bottom-quote-mark">
-                        
+                        <img src="images/quotemarks-right.svg" alt="next" class="" />
                     </div>
+                </div>
 
+                <div class="quote-carousel-item quote-item-second">
+                    <div class="top-quote-mark">
+                        <img src="images/quotemarks-left.svg" alt="next" class="" />
+                    </div>
+                    <div class="quote-content">
+                        To say that your professionalism, guidance and to your
+                        client is outstanding is a sheer understatement! You not &
+                        only helped me find what I was looking for in a career.
+                    </div>
+                    <div class="flex-container quote-owner">
+                        <div class="left">
+                            <div class="quote-owner-image">
+                                <img src="images/profile-image-2/Image-2.jpg" srcset="images/profile-image-2/image-2@2x.jpg 2x,
+                                    images/profile-image-2/image-2@3x.jpg 3x" class="rounded-image Image-2">
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="quote-owner-name">
+                                Navana Gomes
+                            </div>
+                            <div class="quote-owner-job-title">
+                                Motion Designer
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom-quote-mark">
+                        <img src="images/quotemarks-right.svg" alt="next" class="" />
+                    </div>
+                </div>
+
+                <div class="quote-carousel-item quote-item-third">
+                    <div class="top-quote-mark">
+                        <img src="images/quotemarks-left.svg" alt="next" class="" />
+                    </div>
+                    <div class="quote-content">
+                        To say that your professionalism, guidance and to your
+                        client is outstanding is a sheer understatement! You not &
+                        only helped me find what I was looking for in a career.
+                    </div>
+                    <div class="flex-container quote-owner">
+                        <div class="left">
+                            <div class="quote-owner-image">
+                                <img src="images/profile-image-3/Image-3.jpg" srcset="images/profile-image-3/image-3@2x.jpg 2x,
+                                    images/profile-image-3/image-3@3x.jpg 3x" class="rounded-image Image-3">
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="quote-owner-name">
+                                Jack Huston
+                            </div>
+                            <div class="quote-owner-job-title">
+                                Web Designer
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom-quote-mark">
+                        <img src="images/quotemarks-right.svg" alt="next" class="" />
+                    </div>
+                </div>
+
+                <div class="quote-carousel-item quote-item-forth">
+                    <div class="top-quote-mark">
+                        <img src="images/quotemarks-left.svg" alt="next" class="" />
+                    </div>
+                    <div class="quote-content">
+                        To say that your professionalism, guidance and to your
+                        client is outstanding is a sheer understatement! You not &
+                        only helped me find what I was looking for in a career.
+                    </div>
+                    <div class="flex-container quote-owner">
+                        <div class="left">
+                            <div class="quote-owner-image">
+                                <img src="images/profile-image-4/Image-4.jpg" srcset="images/profile-image-4/image-4@2x.jpg 2x,
+                                    images/profile-image-4/image-4@3x.jpg 3x" class="rounded-image Image-4">
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="quote-owner-name">
+                                Keith Kennedy
+                            </div>
+                            <div class="quote-owner-job-title">
+                                Android Designer
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom-quote-mark">
+                        <img src="images/quotemarks-right.svg" alt="next" class="" />
+                    </div>
                 </div>
             </div>
         </div>
@@ -522,8 +636,10 @@
                 Are you ready to get the job?
             </div>
 
-            <div class="send-bar">
-                <input class="input-inside" type="text" placeholder="Enter email address">
+            <div class="flex-container send-bar">
+                <div>
+                    <input class="input-inside" type="text" placeholder="Enter email address">
+                </div>
                 <div class="rounded-conner-wrapper">
                     <div class="text-button">Send</div>
                 </div>
@@ -533,10 +649,13 @@
 
         <!-- /* End are you ready section -->
 
-        <!-- Footer section -->
+    </div>
 
-        <div class="footer">
+    <!-- Footer section -->
 
+    <div class="footer">
+
+        <div class="outer-wrapper">
             <div class="grid-container list-categories">
                 <div class="header-categories categories-01">Categories</div>
                 <div class="header-categories categories-02">Community</div>
@@ -560,15 +679,16 @@
                 <div class="sub-categories categories-20">Linkdin</div>
             </div>
 
-            <div class="wrapper-creadit">
-                <div class="creadit">
+            <div class="wrapper-credit">
+                <div class="credit">
                     @2019. All rights reserved. Design by Arafat Ovi
                 </div>
             </div>
-
         </div>
 
-        <!-- /* End footer section -->
+    </div>
+
+    <!-- /* End footer section -->
 
 
 </body>

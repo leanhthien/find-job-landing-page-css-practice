@@ -1,7 +1,6 @@
 .footer {
-  padding: 0;
   margin-top: 206px;
-  border-top-right-radius: 225px;
+  border-radius: 0% 20% 0% 0% / 0% 50% 0% 0%;
   background-color: #030b61;
 }
 
@@ -10,17 +9,12 @@
   grid-template-columns: auto auto auto auto;
   grid-template-rows: auto auto auto auto;
   justify-items: stretch;
-  margin: 0 0 0 167px;
 }
 
 .header-categories {
   font-family: $overpass;
   font-size: 38px;
   font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  letter-spacing: normal;
-  text-align: left;
   color: #ffffff;
   margin: 118px 0 40px 0;
 }
@@ -29,25 +23,32 @@
   opacity: 0.42;
   font-size: 26px;
   font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
-  letter-spacing: normal;
-  text-align: left;
   color: #ffffff;
   margin: 0 0 25px 0;
 }
 
-.wrapper-creadit {
+.wrapper-credit {
   position: relative;
   background-color: #030b61;
+  overflow: hidden;
 }
 
-.creadit {
+.credit {
+  float: right;
   opacity: 0.42;
   font-size: 22px;
   font-weight: 600;
   line-height: 3.91;
-  padding: 89px 142px 75px 142px;
+  padding: 89px 0 75px 0;
   color: #ffffff;
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 576px) {
+  
+}
+
+// Extra small devices (portrait phones, less than I 768px)
+@media (max-width: 768px) {
   
 }

@@ -42,14 +42,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
     });
 });
 
-// function setupNavigation() {
-//   var x = document.getElementById("myTopnav");
-//   if (x.className === "topnav") {
-//     x.className += " responsive";
-//   } else {
-//     x.className = "topnav";
-//   }
-// }
+function setupNavigation() {
+  console.log('Trigger navigation!');
+  var x = document.getElementById("myTopnav");
+  console.log('Nav section: ' + x.className);
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
 
 function setupChooseCarousel(position) {
 

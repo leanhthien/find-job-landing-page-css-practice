@@ -1,12 +1,16 @@
 
+// Import components
 @import 'components/font';
 @import 'components/layout';
 @import 'components/button';
 @import 'components/icon';
-@import 'components/nav';
+@import 'components/navigation';
 @import 'components/rounded-corners-triangle';
 @import 'components/divider';
 @import 'components/indicator';
+@import 'components/rounded-image';
+
+// Import main sections
 @import 'find-a-perfect-job';
 @import 'recommended-jobs';
 @import 'why-you-chosse-recruite';
@@ -14,6 +18,4 @@
 @import 'some-special-quotes';
 @import 'are-you-ready';
 @import 'footer';
-
-
 

@@ -1,132 +1,165 @@
 .why-you-choose-recruite {
-  margin: 32px 142px 0 142px;
+  margin: 3.2rem 0 0 0;
 }
 
 .aspect-list {
   grid-template-columns: auto auto;
-  margin-top: 147px;
+  margin-top: 14.7rem;
+  width: 100%;
 }
 
 .aspect-item {
-  width: 485px;
-  height: 254px;
-  box-shadow: 0 24px 91px 0 rgba(3, 11, 97, 0.08);
+  width: 48.5rem;
+  height: auto;
+  box-shadow: 0 2.4rem 9.1rem 0 rgba(3, 11, 97, 0.08);
   background-color: #ffffff;
   position: relative;
+
+  .outside-icon {
+    img {
+      width: 20rem;
+      height: 20rem;
+      position: absolute;
+      top: calc(-35%);
+      right: calc(-19%);
+      z-index: -10;
+    }
+  }
 }
 
 .first-aspect {
   justify-self: end;
-  margin: 0 20px 28px 0;
+  margin: 0 2.5rem 2.8rem 0;
 }
 
 .second-aspect {
-  margin: 0 0 28px 20px;
+  margin: 0 0 2.8rem 2.5rem;
 }
 
 .third-aspect {
   justify-self: end;
-  margin: 28px 20px 0 0;
+  margin: 2.8rem 2.5rem 0 0;
 }
 
 .forth-aspect {
-  margin: 28px 0 0 20px;
+  margin: 2.8rem 0 0 2.5rem;
 }
 
-.outside-icon > img {
-  position: absolute;
-  top: -35%;
-  right: -20%;
-  z-index: -10;
+.grid-triangle-wrapper {
+  width: 10.9rem;
+  height: 10.4rem;
+  position: relative;
+
+  .triangle {
+    top: 0.1rem;
+    left: 1.8rem;
+  }
 }
 
 .aspect-header {
-  margin: 12px 0 0 40px;
+  margin: 1.2rem 0 0 4rem;
+
+  .triangle,
+  .triangle:before,
+  .triangle:after {
+    width: 7.5rem;
+    height: 7.5rem;
+  }
+
+  .triangle {
+    transform: rotate(-60deg) skewX(-30deg) scale(1, 0.866);
+    opacity: 0.13;
+  }
 }
 
-.aspect-header > .triangle,
-.aspect-header > .triangle:before,
-.aspect-header > .triangle:after {
-  width: 75px;
-  height: 75px;
+.first-aspect {
+  .triangle-icon {
+    position: absolute;
+    width: 6.4rem;
+    height: 4.1rem;
+    top: calc(55% - 2.05rem);
+    left: calc(50% - 3.2rem);
+  }
+
+  .aspect-header {
+    .triangle,
+    .triangle:before,
+    .triangle:after {
+      background-color: #09aeff;
+    }
+  }
 }
 
-.aspect-header > .triangle {
-  transform: rotate(-60deg) skewX(-30deg) scale(1, 0.866);
-  opacity: 0.13;
+.second-aspect {
+  .triangle-icon {
+    position: absolute;
+    width: 5.5rem;
+    height: 5.5rem;
+    top: calc(55% - 2.75rem);
+    left: calc(50% - 2.75rem);
+  }
+
+  .aspect-header {
+    .triangle,
+    .triangle:before,
+    .triangle:after {
+      background-color: #d2550d;
+    }
+  }
 }
 
-.first-aspect > .aspect-header > .triangle,
-.first-aspect > .aspect-header > .triangle:before,
-.first-aspect > .aspect-header > .triangle:after {
-  background-color: #09aeff;
+.third-aspect {
+  .triangle-icon {
+    position: absolute;
+    width: 6.4rem;
+    height: 5.7rem;
+    top: calc(55% - 2.85rem);
+    left: calc(50% - 3.2rem);
+  }
+
+  .aspect-header {
+    .triangle,
+    .triangle:before,
+    .triangle:after {
+      background-color: #23dce1;
+    }
+  }
 }
 
-.second-aspect > .aspect-header > .triangle,
-.second-aspect > .aspect-header > .triangle:before,
-.second-aspect > .aspect-header > .triangle:after {
-  background-color: #d2550d;
-}
+.forth-aspect {
+  .triangle-icon {
+    position: absolute;
+    width: 5.5rem;
+    height: 5.8rem;
+    top: calc(55% - 2.9rem);
+    left: calc(50% - 2.75rem);
+  }
 
-.third-aspect > .aspect-header > .triangle,
-.third-aspect > .aspect-header > .triangle:before,
-.third-aspect > .aspect-header > .triangle:after {
-  background-color: #23dce1;
-}
-
-.forth-aspect > .aspect-header > .triangle,
-.forth-aspect > .aspect-header > .triangle:before,
-.forth-aspect > .aspect-header > .triangle:after {
-  background-color: #d8d846;
-}
-
-.first-aspect > .inner-triangle {
-  position: absolute;
-  top: 52px;
-  left: 45px;
-}
-
-.second-aspect > .inner-triangle {
-  position: absolute;
-  top: 45px;
-  left: 50px;
-}
-
-.third-aspect > .inner-triangle {
-  position: absolute;
-  top: 45px;
-  left: 45px;
-}
-
-.forth-aspect > .inner-triangle {
-  position: absolute;
-  top: 45px;
-  left: 50px;
+  .aspect-header {
+    .triangle,
+    .triangle:before,
+    .triangle:after {
+      background-color: #d8d846;
+    }
+  }
 }
 
 .aspect-title {
-  font-size: 26px;
+  font-size: 2.6rem;
   font-weight: bold;
-  padding: 46px 0 0 25px;
+  padding: 4.6rem 1rem 0 2.5rem;
 }
 
 .aspect-description {
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.75;
-  letter-spacing: normal;
-  text-align: left;
   opacity: 0.5;
-  margin: 46px 36px 36px 36px;
+  margin: 4.6rem 3.6rem 3.6rem 3.6rem;
 }
 
 .aspect-button {
-  margin-top: 155px;
+  margin-top: 15.5rem;
   display: flex;
   justify-content: center;
 }
-
-
-

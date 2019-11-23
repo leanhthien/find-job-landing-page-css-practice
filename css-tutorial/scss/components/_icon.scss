@@ -1,13 +1,14 @@
 .circle-wrapper {
-  width: 117px;
-  height: 114px;
-  border-radius: 66px;
-  margin: 15px;
+  width: 11.7rem;
+  height: 11.7rem;
+  border-radius: 6.6rem;
+  top: calc(50% - 5.85rem);
+  right: 1.5rem;
 }
 
 .inner-icon {
-  width: 33.3px;
-  height: 33.3px;
+  width: 3.33rem;
+  height: 3.33rem;
   object-fit: contain;
   position: relative;
   float: left;

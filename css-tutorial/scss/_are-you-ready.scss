@@ -5,20 +5,25 @@
 }
 
 .send-bar {
-  width: 1077px;
+  width: 66%;
   height: 112px;
   border-radius: 61px;
   box-shadow: 0 7px 90px 0 rgba(3, 11, 97, 0.09);
-  background-color: #ffffff;
   margin-top: 80px;
+  justify-content: space-between;
 }
 
-.send-bar > .input-inside {
-  transform: translate(20%, 100%);
+.send-bar > div > .input-inside {
+  transform: translate(20%, calc(50% + 14px));
+}
+
+.input-inside:focus {
+  outline-width: 0;
+  outline: none;
 }
 
 .rounded-conner-wrapper {
-  width: 268px;
+  width: 32%;
   height: 112px;
   border-radius: 61px;
   background-image: linear-gradient(199deg, #1040c6 -26%, #09aeff 99%);
@@ -28,11 +33,7 @@
 .text-button {
   font-size: 31px;
   font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 2.77;
-  letter-spacing: normal;
-  text-align: left;
   color: #ffffff;
   position: relative;
   float: left;

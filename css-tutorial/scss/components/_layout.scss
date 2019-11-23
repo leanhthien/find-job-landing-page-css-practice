@@ -1,9 +1,80 @@
-// Flex
-.flex-container {
-    display: flex;
-  }
-  
+// The default, most outer space
+* {
+  padding: 0;
+  margin: 0;
+}
 
+html {
+  // Extra large devices (desktops, larger than 1200px) are dafault target
+  font-size: 10px;
+
+  // Small devices (phones, less than 576px)
+  @media (max-width: 576px) {
+    font-size: 5px;
+  }
+
+  // Medium devices (portrait phones, tablets, less than 768px)
+  @media (max-width: 768px) {
+    font-size: 7px;
+  }
+
+  // Large devices (desktops, less than 992px)
+  @media (max-width: 992px) {
+    
+  }
+}
+
+body {
+  font-family: $muli;
+  color: #030b61;
+}
+
+.outer-wrapper {
+  max-width: 1636px;
+  margin: 4.2rem auto 0 auto;
+  padding: 0 4.2rem;
+}
+
+// Flex container
+.flex-container {
+  display: flex;
+}
+
+// Grid container
 .grid-container {
-    display: grid;
+  display: grid;
+}
+
+// Test purpose
+
+.top-nav-list {
+  // display: none;
+}
+
+.find-a-perfect-main {
+  // display: none;
+}
+
+.recommended-jobs {
+  // display: none;
+}
+
+.why-you-choose-recruite {
+  // display: none;
+}
+
+.work-with-talented-people {
+  // display: none;
+}
+
+.some-special-quotes {
+  display: none;
+}
+
+.are-you-ready {
+  display: none;
+}
+
+.footer {
+  display: none;
 }
