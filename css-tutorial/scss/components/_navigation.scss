@@ -15,27 +15,35 @@
   background-image: linear-gradient(178deg, #1040c6 -122%, #09aeff 96%);
   font-family: $oswald;
 
-}
+  &.conner-circle {
+    border-radius: 30% 30% 0% 30%;
+  }
 
-.inside-color-background {
-  position: relative;
-  float: left;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 4.5rem;
-  color: white;
-}
-
-.conner-circle {
-  border-radius: 30% 30% 0% 30%;
+  .inside-color-background {
+    position: relative;
+    float: left;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4.5rem;
+    color: white;
+  }
 }
 
 // Right navigation
 .topnav {
+  /* Hide the link that should open and close the topnav on small screens */
+  .icon {
+    display: none;
+
+    @media screen and (max-width: 768px) {
+      display: block;
+    }
+  }
+
   a {
     color: #030b61;
-    padding: 24px 20px;
+    padding: 2.4rem 2rem;
     text-decoration: none;
     font-size: 2.4rem;
     font-family: $muli;
@@ -43,26 +51,16 @@
 
     &.active {
       color: #0b8fef;
+
+      &.custom-button {
+        width: 27.4rem;
+        border-radius: 4.4rem;
+        background-color: rgba(9, 174, 255, 0.17);
+      }
     }
 
     @media (max-width: 768px) {
       display: none;
-    }
-
-  }
-
-  .custom-button {
-    width: 27.4rem;
-    border-radius: 4.4rem;
-    background-color: rgba(9, 174, 255, 0.17);
-  }
-
-  /* Hide the link that should open and close the topnav on small screens */
-  .icon {
-    display: none;
-
-    @media screen and (max-width: 768px) {
-      display: block;
     }
   }
 
@@ -78,7 +76,5 @@
         align-self: flex-end;
       }
     }
-
   }
-
 }

@@ -1,51 +1,72 @@
-document.addEventListener("DOMContentLoaded", function(event) {
+document.addEventListener("DOMContentLoaded", function (event) {
+
+  // Indicator for job carousel
   document
     .getElementById("job-active-left-arrow")
-    .addEventListener("click", function(event) {
+    .addEventListener("click", function (event) {
       event.preventDefault();
-      setupCarousel("left");
+      setupJobIndicator(position);
+      setupJobCarouselItem(position);
     });
 
   document
     .getElementById("job-active-right-arrow")
-    .addEventListener("click", function(event) {
+    .addEventListener("click", function (event) {
       event.preventDefault();
-      setupCarousel("right");
+      setupJobIndicator(position);
+      setupJobCarouselItem(position);
+    });
+
+  // Indicator for quote carousel
+  document
+    .getElementById("quote-active-left-arrow")
+    .addEventListener("click", function (event) {
+      event.preventDefault();
+      setupJobIndicator(position);
+      setupQuoteCarouselItem(position);
     });
 
   document
+    .getElementById("quote-active-right-arrow")
+    .addEventListener("click", function (event) {
+      event.preventDefault();
+      setupJobIndicator(position);
+      setupQuoteCarouselItem(position);
+    });
+
+
+  // Set up layout for chosen one
+  document
     .getElementById("job-active-right-arrow")
-    .addEventListener("click", function(event) {
+    .addEventListener("click", function (event) {
       event.preventDefault();
       setupChooseCarousel(1);
     });
 
   document
     .getElementById("job-active-right-arrow")
-    .addEventListener("click", function(event) {
+    .addEventListener("click", function (event) {
       event.preventDefault();
-      setupChooseCarousel(2); 
+      setupChooseCarousel(2);
     });
 
   document
-    .getElementById("job-active-right-arrow")
-    .addEventListener("click", function(event) {
+    .getElementById("quote-active-left-arrow")
+    .addEventListener("click", function (event) {
       event.preventDefault();
       setupChooseCarousel(3);
     });
 
   document
-    .getElementById("job-active-right-arrow")
-    .addEventListener("click", function(event) {
+    .getElementById("quote-active-right-arrow")
+    .addEventListener("click", function (event) {
       event.preventDefault();
       setupChooseCarousel(4);
     });
 });
 
 function setupNavigation() {
-  console.log('Trigger navigation!');
   var x = document.getElementById("myTopnav");
-  console.log('Nav section: ' + x.className);
   if (x.className === "topnav") {
     x.className += " responsive";
   } else {
@@ -55,29 +76,22 @@ function setupNavigation() {
 
 function setupChooseCarousel(position) {
 
-
-
   switch (position) {
     case 1:
-      
+
       break;
     case 2:
-      
+
       break;
     case 3:
-      
+
       break;
     case 4:
-      
+
       break;
     default:
-    
-  }
-}
 
-function setupCarousel(position) {
-  setupJobIndicator(position);
-  setupCarouselItem(position);
+  }
 }
 
 function setupJobIndicator(position) {
@@ -94,7 +108,17 @@ function setupJobIndicator(position) {
   }
 }
 
-function setupCarouselItem(position) {
+function setupJobCarouselItem(position) {
+  if (position == "left") {
+    document.getElementById("first-job-carousel").style.display = "block";
+    document.getElementById("last-job-carousel").style.display = "none";
+  } else {
+    document.getElementById("first-job-carousel").style.display = "none";
+    document.getElementById("last-job-carousel").style.display = "block";
+  }
+}
+
+function setupQuoteCarouselItem(position) {
   if (position == "left") {
     document.getElementById("first-job-carousel").style.display = "block";
     document.getElementById("last-job-carousel").style.display = "none";

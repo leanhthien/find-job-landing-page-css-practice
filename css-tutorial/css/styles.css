@@ -9,14 +9,14 @@
 html {
   font-size: 10px;
 }
-@media (max-width: 576px) {
-  html {
-    font-size: 5px;
-  }
-}
 @media (max-width: 768px) {
   html {
     font-size: 7px;
+  }
+}
+@media (max-width: 576px) {
+  html {
+    font-size: 5px;
   }
 }
 body {
@@ -38,16 +38,10 @@ body {
   display: grid;
 }
 
-.some-special-quotes {
-  display: none;
-}
-
-.are-you-ready {
-  display: none;
-}
-
-.footer {
-  display: none;
+.clear-float:after {
+  content: "";
+  clear: both;
+  display: block;
 }
 
 .custom-button {
@@ -136,8 +130,10 @@ body {
   background-image: linear-gradient(178deg, #1040c6 -122%, #09aeff 96%);
   font-family: "Oswald";
 }
-
-.inside-color-background {
+.rectangle-right-left.conner-circle {
+  border-radius: 30% 30% 0% 30%;
+}
+.rectangle-right-left .inside-color-background {
   position: relative;
   float: left;
   top: 50%;
@@ -147,16 +143,20 @@ body {
   color: white;
 }
 
-.conner-circle {
-  border-radius: 30% 30% 0% 30%;
-}
-
 .topnav {
   /* Hide the link that should open and close the topnav on small screens */
 }
+.topnav .icon {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .topnav .icon {
+    display: block;
+  }
+}
 .topnav a {
   color: #030b61;
-  padding: 24px 20px;
+  padding: 2.4rem 2rem;
   text-decoration: none;
   font-size: 2.4rem;
   font-family: "Muli";
@@ -165,22 +165,14 @@ body {
 .topnav a.active {
   color: #0b8fef;
 }
-@media (max-width: 768px) {
-  .topnav a {
-    display: none;
-  }
-}
-.topnav .custom-button {
+.topnav a.active.custom-button {
   width: 27.4rem;
   border-radius: 4.4rem;
   background-color: rgba(9, 174, 255, 0.17);
 }
-.topnav .icon {
-  display: none;
-}
-@media screen and (max-width: 768px) {
-  .topnav .icon {
-    display: block;
+@media (max-width: 768px) {
+  .topnav a {
+    display: none;
   }
 }
 .topnav.responsive {
@@ -567,13 +559,18 @@ input[type=text] {
 }
 
 .carousel-card {
-  width: 51rem;
+  width: 30%;
   height: auto;
   border-radius: 30px;
   position: relative;
   box-shadow: 0 2px 78px 0 rgba(27, 40, 155, 0.12);
   border: solid 1px rgba(112, 112, 112, 0.22);
   background-color: #ffffff;
+}
+@media (max-width: 768px) {
+  .carousel-card {
+    width: 50%;
+  }
 }
 
 .carousel-top-image {
@@ -681,11 +678,12 @@ input[type=text] {
   position: relative;
 }
 .aspect-item .outside-icon img {
-  width: 20rem;
+  width: 10rem;
   height: 20rem;
   position: absolute;
+  object-fit: cover;
   top: calc(-35%);
-  right: calc(-19%);
+  right: calc(-8%);
   z-index: -10;
 }
 
@@ -833,9 +831,7 @@ input[type=text] {
   border-radius: 2rem;
   box-shadow: 0 20px 99px 0 rgba(3, 11, 97, 0.19);
   background-color: #ffffff;
-  position: absolute;
-  top: 0;
-  right: 0;
+  float: right;
   opacity: 0.5;
 }
 
@@ -860,7 +856,7 @@ input[type=text] {
 
 .profile-image-list {
   grid-template-columns: auto auto auto auto auto;
-  margin: 6.7rem 7% 0px 7%;
+  margin: 6.7rem 4.5rem 0 4.5rem;
   justify-items: center;
 }
 
@@ -873,14 +869,15 @@ input[type=text] {
 }
 
 .single-profile {
-  width: 50%;
+  width: 45%;
   height: auto;
   border-radius: 2rem;
   box-shadow: 0 31px 93px 0 rgba(27, 40, 155, 0.1);
   background-color: #ffffff;
-  position: absolute;
-  top: -10%;
-  left: 0;
+  float: left;
+  margin-top: -15%;
+  z-index: 10;
+  position: relative;
 }
 
 .medal {
@@ -929,39 +926,66 @@ input[type=text] {
 }
 
 .some-special-quotes {
-  margin-top: 390px;
+  margin-top: 22em;
 }
 
-.top-quote > .left {
+@media (max-width: 768px) {
+  .top-quote {
+    flex-direction: column;
+  }
+}
+.top-quote .left {
   flex: 1;
 }
-
-.top-quote > .right {
+.top-quote .right {
   flex: 1;
   position: relative;
 }
-
-.top-quote > .right > .carousel-indicator {
+.top-quote .right .carousel-indicator {
   position: absolute;
   margin: 0;
   padding: 0;
   right: 0;
   bottom: 0;
 }
+@media (max-width: 768px) {
+  .top-quote .right {
+    margin-top: 10rem;
+  }
+}
 
 .quotes-carousel {
   width: 100%;
   height: 50%;
-  margin: 109px 0 0 0;
+  margin-top: 10.9rem;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .quotes-carousel {
+    justify-content: center;
+  }
+  .quotes-carousel .quote-item-second, .quotes-carousel .quote-item-third {
+    display: none;
+  }
 }
 
 .quote-carousel-item {
-  width: 45%;
+  width: 30%;
   height: auto;
   box-shadow: 0 15px 98px 0 rgba(3, 11, 97, 0.1);
   background-color: #ffffff;
   position: relative;
-  margin: 0 43px 0 0;
+}
+@media (max-width: 768px) {
+  .quote-carousel-item {
+    width: 45%;
+    width: 75%;
+  }
+}
+
+.quote-mark {
+  width: 5.7rem;
+  height: 4rem;
 }
 
 .top-quote-mark {
@@ -979,40 +1003,39 @@ input[type=text] {
 .quote-content {
   opacity: 0.61;
   font-family: Muli;
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 600;
   line-height: 1.5;
   color: #030b61;
-  padding: 117px 50px 0 50px;
+  padding: 11.7rem 5rem 0 5rem;
 }
 
 .quote-owner {
   align-items: center;
-  margin: 48px 0 48px 0;
+  margin: 4.8rem 0;
 }
-
-.quote-owner > .right {
-  margin: 0 50px 0 27px;
+.quote-owner .right {
+  margin: 0 5rem 0 2.7rem;
 }
 
 .quote-owner-image > .rounded-image {
-  width: 91px;
-  height: 91px;
-  margin: 0 0 0 50px;
+  width: 9.1rem;
+  height: 9.1rem;
+  margin-left: 5rem;
 }
 
 .quote-owner-name {
-  font-size: 28px;
+  font-size: 2.8rem;
   font-weight: bold;
   color: #030b61;
 }
 
 .quote-owner-job-title {
   opacity: 0.61;
-  font-size: 22px;
+  font-size: 2.2rem;
   font-weight: 600;
   color: #030b61;
-  margin: 6px 0 0 0;
+  margin-top: 0.6rem;
 }
 
 .quote-item-forth {
@@ -1020,22 +1043,26 @@ input[type=text] {
 }
 
 .are-you-ready {
-  margin-top: 208px;
+  margin-top: 20.8rem;
   flex-direction: column;
   align-items: center;
 }
 
 .send-bar {
   width: 66%;
-  height: 112px;
-  border-radius: 61px;
+  height: 11.2rem;
+  border-radius: 6rem;
   box-shadow: 0 7px 90px 0 rgba(3, 11, 97, 0.09);
-  margin-top: 80px;
+  margin-top: 8rem;
   justify-content: space-between;
 }
 
-.send-bar > div > .input-inside {
-  transform: translate(20%, calc(50% + 14px));
+.send-bar div .input-inside {
+  height: 4rem;
+  font-size: 3.1rem;
+  font-weight: 600;
+  color: #030b61;
+  transform: translate(20%, calc(50% + 2rem));
 }
 
 .input-inside:focus {
@@ -1045,14 +1072,14 @@ input[type=text] {
 
 .rounded-conner-wrapper {
   width: 32%;
-  height: 112px;
-  border-radius: 61px;
+  height: 11.2rem;
+  border-radius: 6rem;
   background-image: linear-gradient(199deg, #1040c6 -26%, #09aeff 99%);
   float: right;
 }
 
 .text-button {
-  font-size: 31px;
+  font-size: 3.1rem;
   font-weight: 600;
   line-height: 2.77;
   color: #ffffff;
@@ -1064,13 +1091,13 @@ input[type=text] {
 }
 
 .footer {
-  margin-top: 206px;
+  margin-top: 20.6rem;
   border-radius: 0% 20% 0% 0%/0% 50% 0% 0%;
   background-color: #030b61;
 }
 
 .list-categories {
-  margin-top: 116px;
+  margin-top: 11.6rem;
   grid-template-columns: auto auto auto auto;
   grid-template-rows: auto auto auto auto;
   justify-items: stretch;
@@ -1078,18 +1105,18 @@ input[type=text] {
 
 .header-categories {
   font-family: "Overpass";
-  font-size: 38px;
+  font-size: 3.8rem;
   font-weight: normal;
   color: #ffffff;
-  margin: 118px 0 40px 0;
+  margin: 11.8rem 0 4rem 0;
 }
 
 .sub-categories {
   opacity: 0.42;
-  font-size: 26px;
+  font-size: 2.6rem;
   font-weight: 600;
   color: #ffffff;
-  margin: 0 0 25px 0;
+  margin-bottom: 2.5rem;
 }
 
 .wrapper-credit {
@@ -1101,10 +1128,10 @@ input[type=text] {
 .credit {
   float: right;
   opacity: 0.42;
-  font-size: 22px;
+  font-size: 2.2rem;
   font-weight: 600;
   line-height: 3.91;
-  padding: 89px 0 75px 0;
+  padding: 8.9rem 0 7.5rem 0;
   color: #ffffff;
 }
 

@@ -8,19 +8,18 @@ html {
   // Extra large devices (desktops, larger than 1200px) are dafault target
   font-size: 10px;
 
-  // Small devices (phones, less than 576px)
-  @media (max-width: 576px) {
-    font-size: 5px;
-  }
-
   // Medium devices (portrait phones, tablets, less than 768px)
   @media (max-width: 768px) {
     font-size: 7px;
   }
 
+  // Small devices (phones, less than 576px)
+  @media (max-width: 576px) {
+    font-size: 5px;
+  }
+
   // Large devices (desktops, less than 992px)
   @media (max-width: 992px) {
-    
   }
 }
 
@@ -43,6 +42,12 @@ body {
 // Grid container
 .grid-container {
   display: grid;
+}
+
+.clear-float:after {
+  content: "";
+  clear: both;
+  display: block;
 }
 
 // Test purpose
@@ -68,13 +73,13 @@ body {
 }
 
 .some-special-quotes {
-  display: none;
+  // display: none;
 }
 
 .are-you-ready {
-  display: none;
+  // display: none;
 }
 
 .footer {
-  display: none;
+  // display: none;
 }

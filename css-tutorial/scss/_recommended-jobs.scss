@@ -60,13 +60,17 @@
 }
 
 .carousel-card {
-  width: 51rem;
+  width: 30%;
   height: auto;
   border-radius: 30px;
   position: relative;
   box-shadow: 0 2px 78px 0 rgba(27, 40, 155, 0.12);
   border: solid 1px rgba(112, 112, 112, 0.22);
   background-color: #ffffff;
+
+  @media (max-width: 768px) {
+    width: 50%;
+  }
 }
 
 .carousel-top-image {

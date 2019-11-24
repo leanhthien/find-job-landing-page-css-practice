@@ -1,20 +1,28 @@
 .are-you-ready {
-  margin-top: 208px;
+  margin-top: 20.8rem;
   flex-direction: column;
   align-items: center;
 }
 
 .send-bar {
   width: 66%;
-  height: 112px;
-  border-radius: 61px;
+  height: 11.2rem;
+  border-radius: 6rem;
   box-shadow: 0 7px 90px 0 rgba(3, 11, 97, 0.09);
-  margin-top: 80px;
+  margin-top: 8rem;
   justify-content: space-between;
 }
 
-.send-bar > div > .input-inside {
-  transform: translate(20%, calc(50% + 14px));
+.send-bar {
+  div {
+    .input-inside {
+      height: 4rem;
+      font-size: 3.1rem;
+      font-weight: 600;
+      color: #030b61;
+      transform: translate(20%, calc(50% + 2rem));
+    }
+  }
 }
 
 .input-inside:focus {
@@ -24,14 +32,14 @@
 
 .rounded-conner-wrapper {
   width: 32%;
-  height: 112px;
-  border-radius: 61px;
+  height: 11.2rem;
+  border-radius: 6rem;
   background-image: linear-gradient(199deg, #1040c6 -26%, #09aeff 99%);
   float: right;
 }
 
 .text-button {
-  font-size: 31px;
+  font-size: 3.1rem;
   font-weight: 600;
   line-height: 2.77;
   color: #ffffff;

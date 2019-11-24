@@ -28,9 +28,7 @@
   border-radius: 2rem;
   box-shadow: 0 20px 99px 0 rgba(3, 11, 97, 0.19);
   background-color: #ffffff;
-  position: absolute;
-  top: 0;
-  right: 0;
+  float: right;
   opacity: 0.5;
 }
 
@@ -55,7 +53,7 @@
 
 .profile-image-list {
   grid-template-columns: auto auto auto auto auto;
-  margin: 6.7rem 7% 0px 7%;
+  margin: 6.7rem 4.5rem 0 4.5rem;
   justify-items: center;
 }
 
@@ -68,14 +66,15 @@
 }
 
 .single-profile {
-  width: 50%;
+  width: 45%;
   height: auto;
   border-radius: 2rem;
   box-shadow: 0 31px 93px 0 rgba(27, 40, 155, 0.1);
   background-color: #ffffff;
-  position: absolute;
-  top: -10%;
-  left: 0;
+  float: left;
+  margin-top: -15%;
+  z-index: 10;
+  position: relative;
 }
 
 .medal {

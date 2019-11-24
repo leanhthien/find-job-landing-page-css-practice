@@ -1,11 +1,11 @@
 .footer {
-  margin-top: 206px;
+  margin-top: 20.6rem;
   border-radius: 0% 20% 0% 0% / 0% 50% 0% 0%;
   background-color: #030b61;
 }
 
 .list-categories {
-  margin-top: 116px;
+  margin-top: 11.6rem;
   grid-template-columns: auto auto auto auto;
   grid-template-rows: auto auto auto auto;
   justify-items: stretch;
@@ -13,18 +13,18 @@
 
 .header-categories {
   font-family: $overpass;
-  font-size: 38px;
+  font-size: 3.8rem;
   font-weight: normal;
   color: #ffffff;
-  margin: 118px 0 40px 0;
+  margin: 11.8rem 0 4rem 0;
 }
 
 .sub-categories {
   opacity: 0.42;
-  font-size: 26px;
+  font-size: 2.6rem;
   font-weight: 600;
   color: #ffffff;
-  margin: 0 0 25px 0;
+  margin-bottom: 2.5rem;
 }
 
 .wrapper-credit {
@@ -36,19 +36,9 @@
 .credit {
   float: right;
   opacity: 0.42;
-  font-size: 22px;
+  font-size: 2.2rem;
   font-weight: 600;
   line-height: 3.91;
-  padding: 89px 0 75px 0;
+  padding: 8.9rem 0 7.5rem 0;
   color: #ffffff;
-}
-
-// Extra small devices (portrait phones, less than 576px)
-@media (max-width: 576px) {
-  
-}
-
-// Extra small devices (portrait phones, less than I 768px)
-@media (max-width: 768px) {
-  
 }

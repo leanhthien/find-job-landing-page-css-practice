@@ -17,11 +17,12 @@
 
   .outside-icon {
     img {
-      width: 20rem;
+      width: 10rem;
       height: 20rem;
       position: absolute;
+      object-fit: cover;
       top: calc(-35%);
-      right: calc(-19%);
+      right: calc(-8%);
       z-index: -10;
     }
   }
