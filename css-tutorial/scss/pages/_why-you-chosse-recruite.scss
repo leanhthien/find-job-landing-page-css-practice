@@ -6,25 +6,39 @@
   grid-template-columns: auto auto;
   margin-top: 14.7rem;
   width: 100%;
-}
 
-.aspect-item {
-  width: 48.5rem;
-  height: auto;
-  box-shadow: 0 2.4rem 9.1rem 0 rgba(3, 11, 97, 0.08);
-  background-color: #ffffff;
-  position: relative;
+  .aspect-item {
+    width: 48.5rem;
+    height: auto;
+    box-shadow: 0 2.4rem 9.1rem 0 rgba(3, 11, 97, 0.08);
+    background-color: #ffffff;
+    position: relative;
 
-  .outside-icon {
-    img {
-      width: 10rem;
-      height: 20rem;
-      position: absolute;
-      object-fit: cover;
-      top: calc(-35%);
-      right: calc(-8%);
-      z-index: -10;
+    .outside-icon {
+      img {
+        width: 10rem;
+        height: 20rem;
+        position: absolute;
+        object-fit: cover;
+        top: calc(-35%);
+        right: calc(-8%);
+        z-index: -10;
+      }
     }
+
+    @media (max-width: 768px) {
+      justify-self: center;
+      margin: 0 0 5.7rem 0;
+    }
+
+    @media (max-width: 576px) {
+      width: 80%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: auto;
+    justify-items: center;
   }
 }
 

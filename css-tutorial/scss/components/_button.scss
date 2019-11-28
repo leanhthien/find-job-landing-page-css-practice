@@ -1,13 +1,10 @@
 .custom-button {
-  padding: 20px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
   font-size: 1.5rem;
   font-family: $muli;
   font-weight: 600;
-  margin: 4px 2px;
-  border-radius: 27px;
+  border-radius: 2.7rem;
   cursor: pointer;
 }
 
@@ -24,14 +21,14 @@
 }
 
 .border-button {
-  border: solid 2px #0b8fef;
+  border: solid 0.2rem #0b8fef;
 }
 
 .big-border-button {
   width: 30rem;
   height: 9rem;
   border-radius: 4.6rem;
-  border: solid 3px #09aeff;
+  border: solid 0.3rem #09aeff;
   background-color: #ffffff;
   padding: 0;
   font-size: 3.1rem;

@@ -8,6 +8,10 @@ html {
   // Extra large devices (desktops, larger than 1200px) are dafault target
   font-size: 10px;
 
+  // Large devices (desktops, less than 992px)
+  @media (max-width: 992px) {
+  }
+
   // Medium devices (portrait phones, tablets, less than 768px)
   @media (max-width: 768px) {
     font-size: 7px;
@@ -16,10 +20,6 @@ html {
   // Small devices (phones, less than 576px)
   @media (max-width: 576px) {
     font-size: 5px;
-  }
-
-  // Large devices (desktops, less than 992px)
-  @media (max-width: 992px) {
   }
 }
 
@@ -31,7 +31,21 @@ body {
 .outer-wrapper {
   max-width: 1636px;
   margin: 4.2rem auto 0 auto;
-  padding: 0 4.2rem;
+  padding: 0 14.2rem;
+
+  // Large devices (desktops, less than 992px)
+  @media (max-width: 992px) {
+  }
+
+  // Medium devices (portrait phones, tablets, less than 768px)
+  @media (max-width: 768px) {
+    padding: 0 10rem;
+  }
+
+  // Small devices (phones, less than 576px)
+  @media (max-width: 576px) {
+    padding: 0 5rem;
+  }
 }
 
 // Flex container

@@ -9,12 +9,14 @@
 @import 'components/divider';
 @import 'components/indicator';
 @import 'components/rounded-image';
+@import 'components/footer';
 
 // Import main sections
-@import 'find-a-perfect-job';
-@import 'recommended-jobs';
-@import 'why-you-chosse-recruite';
-@import 'work-with-talented-people';
-@import 'some-special-quotes';
-@import 'are-you-ready';
-@import 'footer';
+@import 'pages/find-a-perfect-job';
+@import 'pages/recommended-jobs';
+@import 'pages/why-you-chosse-recruite';
+@import 'pages/work-with-talented-people';
+@import 'pages/some-special-quotes';
+@import 'pages/are-you-ready';
+
+

@@ -11,9 +11,7 @@
   box-shadow: 0 7px 90px 0 rgba(3, 11, 97, 0.09);
   margin-top: 8rem;
   justify-content: space-between;
-}
 
-.send-bar {
   div {
     .input-inside {
       height: 4rem;
@@ -22,6 +20,10 @@
       color: #030b61;
       transform: translate(20%, calc(50% + 2rem));
     }
+  }
+
+  @media (max-width: 576px) {
+    width: 90%;
   }
 }
 

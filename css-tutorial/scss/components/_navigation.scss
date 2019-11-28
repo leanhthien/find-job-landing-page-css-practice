@@ -3,7 +3,6 @@
   align-items: center;
 
   @media screen and (max-width: 768px) {
-    justify-content: space-between;
     align-items: flex-start;
   }
 }
@@ -56,7 +55,15 @@
         width: 27.4rem;
         border-radius: 4.4rem;
         background-color: rgba(9, 174, 255, 0.17);
+
+        @media (max-width: 1280px) {
+          width: 20.55rem;
+        }
       }
+    }
+
+    @media (max-width: 1280px) {
+      padding: 2rem 1rem;
     }
 
     @media (max-width: 768px) {

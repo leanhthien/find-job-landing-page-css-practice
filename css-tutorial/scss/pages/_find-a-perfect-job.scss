@@ -2,14 +2,14 @@
   margin: 4rem 0 0 0;
   
 
-  @media (max-width: 768px) {
+  @media (max-width: 1440px) {
     flex-direction: column;
   }
 
   .left {
     flex: 50%;
 
-    @media (max-width: 768px) {
+    @media (max-width: 1440px) {
       flex: 0;
     }
   }
@@ -17,7 +17,7 @@
   .right {
     flex: 50%;
 
-    @media (max-width: 768px) {
+    @media (max-width: 1440px) {
       flex: 0;
       padding-bottom: 26rem;
     }
@@ -89,7 +89,7 @@ input[type="text"] {
 
 .brand-wrapper {
   position: relative;
-  margin-top: 125px;
+  margin-top: 11rem;
 }
 
 .trust {
@@ -110,11 +110,11 @@ input[type="text"] {
 }
 
 #first-brand-logo {
-  padding-right: 40px;
+  padding-right: 4rem;
 }
 
 #third-brand-logo {
-  padding-right: 30px;
+  padding-right: 3rem;
 }
 
 // .brand-list {
@@ -202,14 +202,14 @@ input[type="text"] {
 }
 
 .web-developer-title {
-  margin-top: 17px;
+  margin-top: 1.7rem;
   font-family: $muli;
   font-size: 2.8rem;
   font-weight: 700;
 }
 
 .web-developer-description {
-  margin-top: 33px;
+  margin-top: 3.3rem;
   font-size: 1.4rem;
   font-family: $muli;
   font-weight: 600;
@@ -218,16 +218,16 @@ input[type="text"] {
 }
 
 .web-developer-detail {
-  margin-top: 30px;
+  margin-top: 3rem;
   color: #0a95f2;
 }
 
 #more {
-  margin-left: 10px;
+  margin-left: 1rem;
 }
 
 .language-tag-list {
-  margin-top: 14px;
+  margin-top: 1.4rem;
 }
 
 .language-tag-list > .flex-container > button {
@@ -237,7 +237,7 @@ input[type="text"] {
   border-radius: 4.4rem;
   font-size: 1.5rem;
   font-weight: 600;
-  padding: 0px;
+  padding: 0;
 }
 
 .first-tags {
